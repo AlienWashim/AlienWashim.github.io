@@ -1,0 +1,577 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 2%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+a {
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Add this CSS to hide the navbar by default on smaller screens */
+.navbar {
+    display: none;
+}
+
+
+
+.nevi2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2.5%;
+    margin-top: 2px;
+}
+
+
+@media (max-width: 768px) { /* Adjust max-width as needed for mobile and tab view */
+    .nevi2 {
+      flex-direction: row; /* Display items in a column for mobile and tab view */
+      align-items: flex-start;
+    }
+  }
+
+.menu-icon {
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    position: fixed;
+    color: white;
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 100%;
+    top: 2%;
+    right: 3%;
+    cursor: pointer;
+    z-index: 9999; /* Ensure it's above other content */
+    /* Add additional styling as needed */
+    /*animation: glowing 20s linear infinite;*/
+}
+.menu-icon:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px); 
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 100%;
+    animation: glowing 20s linear infinite;
+}
+
+.menu-icon:active {
+    color: #000;
+}
+
+.menu-icon:active:after {
+    background: transparent;
+}
+
+.menu-icon:hover:before {
+    opacity: 1;
+    animation: glowing-reverse 10s linear infinite; /* Change the animation name */
+    content: 'ok';
+}
+
+@keyframes glowing-reverse {
+    0% { background-position: 0 0; }
+    50% { background-position: -400% 0; } /* Reverse the background-position */
+    100% { background-position: 0 0; }
+}
+
+
+.menu-icon:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius:100%;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+/* Style for the active dropdown menu */
+.active {
+    display: block;
+}
+
+
+
+/* Styles for desktop view */
+.header {
+    width: 100%;
+    background-image: url('img/Washim Akram Banner.png');
+    box-shadow: 1px 1px 20px 1px rgb(255, 255, 255);
+    text-align: center;
+    background-size: auto;
+    background-position: center;
+}
+
+.img1 img {
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 1px 20px 1px rgb(255, 255, 255);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.img1 img:hover {
+    background-color: radial-gradient(white, skyblue, gray);
+}
+
+.navbar {
+    background-color: rgb(1, 94, 89);
+    overflow: visible;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 1.5%;
+   box-shadow: 0 8px 30px -10px white;
+}
+
+.nevi1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2vw;
+    gap: 4%;
+    padding-bottom: 20px;
+}
+
+.nevi2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5%;
+    margin-top: 2px;
+    background-color: white;
+    box-shadow: inset 30px 0 15px -10px rgb(1, 94, 89), /* Dark green shadow on the left */
+                inset -30px 0 25px -10px rgb(1, 94, 89);
+}
+
+.item1 {
+    color: rgb(226, 173, 0);
+    font-size: 1.5vw;
+    height: 100%;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    letter-spacing: 1px;
+    box-shadow: 
+        -0.5em 0 0.5em -0.4em rgba(255, 255, 0, 0.8), /* Golden color shadow on the left */
+        0.5em 0 0.5em -0.4em rgba(255, 255, 0, 0.8), /* Golden color shadow on the right */
+        0 -0.5em 0.5em -0.4em rgba(255, 255, 0, 0.8), /* Light yellow shadow on the top */
+        0 0.5em 0.5em -0.4em rgba(255, 255, 0, 0.8);
+    transition: box-shadow 0.25s, transform 0.25s; /* Add transition effect */
+}
+
+/* Add box shadow and transform effect on hover and focus */
+.item1:hover,
+.item1:focus {
+    box-shadow: 0 1em 0.9em -0.4em rgba(166, 255, 0, 0.8), /* Green and yellow mix color shadow */
+                0 0 0.5em -0.4em rgba(199, 255, 114, 0.8), /* Green and yellow mix color shadow */
+                -0.5em 0 0.5em -0.4em rgba(241, 241, 240, 0.8), /* Green and yellow mix color shadow */
+                0.5em 0 0.5em -0.4em rgba(244, 245, 243, 0.8); /* Green and yellow mix color shadow */
+    transform: translateY(-0.25em); /* Move the button slightly upwards */
+}
+
+.item1 a:hover{
+    color: white;
+}
+
+
+.item1 a{
+    text-decoration: none;
+    color: #f77518;
+}
+
+.item2 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+.item2 {
+    color: white;
+    font-size: 1.5vw;
+    height: 100%;
+    padding: 0.3% 0.5%;
+    letter-spacing: 1px;
+    border-left: 2px solid rgba(0, 0, 0, 0.5); /* Dark black border on the left */
+    border-right: 2px solid rgba(0, 0, 0, 0.5); /* Dark black border on the right */
+    transition: box-shadow 0.25s, transform 0.25s;
+}
+
+
+
+
+
+/* Styles for phone and tablet view */
+@media screen and (max-width: 768px) {
+    .img1 img {
+        height: auto; /* Adjust height to auto for responsiveness */
+    }
+
+    .nevi1 {
+        height: auto; /* Adjust height to auto for responsiveness */
+        gap: 2%; /* Reduce the gap between items */
+        padding-bottom: 2px; /* Adjust padding for better spacing */
+    }
+
+    .nevi2 {
+        gap: 3%; /* Reduce the gap between items */
+        box-shadow: inset 10px 0 5px -10px rgb(1, 94, 89), /* Dark green shadow on the left */
+                inset -10px 0 5px -10px rgb(1, 94, 89);
+        margin-top: 5px;
+    }
+
+    .item1,
+    .item2 {
+        font-size: 12px; /* Adjust font size for better readability on smaller screens */
+    }
+
+    .menu-icon{
+        padding: 8px; /* Adjust padding as needed */
+        border-radius: 100%;
+        top: 1.5%;
+        right: 3%;
+    }
+}
+
+
+.content {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5px;
+    padding-top: 2px;
+}
+
+.left_panel {
+    margin-top: 1%;
+    height: auto;
+}
+
+.main_content {
+    background-color: rgb(255, 255, 255);
+}
+
+.right_panel {
+    margin-top: 1%;
+}
+
+.footer {
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center;
+    width: 100%;
+    height: 22vw;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.footer-content1{
+    padding-left: 15%;
+    padding-top: 15%;
+}
+
+.social-info a:hover{
+    background-color: #333; /* Change background color on hover */
+    color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+  border: 4px;
+}
+
+.website-item a:hover{
+    background-color: #333; /* Change background color on hover */
+    color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+  border: 4px;
+}
+
+.footer-content2{
+    padding-top: 15%;
+}
+
+.footer-content3{
+    padding-top: 15%;
+}
+
+
+.lp-item1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 1.4vw;
+}
+
+.lp-item1:hover{
+    box-shadow: 0px 0px 20px rgb(0, 90, 5);
+}
+
+.rt-item1 {
+    width: 100%;
+    height:auto;
+    font-size: 1.4vw;
+}
+
+.rt-item1:hover{
+    box-shadow: 0px 0px 20px rgb(0, 90, 5);
+}
+
+.contact{
+    margin-left: 2px;
+}
+
+.footer-hov:hover{
+    box-shadow: 0px 0px 20px rgb(0, 90, 5);
+}
+.contact-icon{
+    letter-spacing: 2px;
+    margin-top: 5%;
+}
+.contact-info{
+    margin-top: 2%;
+}
+.ft-item2 {
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4vw;
+    box-shadow: 0px 0px 5px 0px black;
+    padding-right: 2px;
+}
+
+.ft-item11 {
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4vw;
+    box-shadow: 0px 0px 5px 0px black;
+    padding-right: 2px;
+}
+
+.social-title{
+    letter-spacing: 2px;
+    margin-top: 5%;
+    margin-left: 12%;
+}
+.social-info{
+    margin-top: 2%;
+}
+
+.ft-item3 {
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4vw;
+    box-shadow: 0px 0px 5px 0px black;
+    padding-right: 2px;
+}
+
+.site-title{
+    letter-spacing: 2px;
+    margin-top: 5%;
+}
+.site-info{
+    margin-top: 2%;
+}
+
+.fa-solid{
+    font-size: 1.3vw;
+}
+.obj-txt{
+    font-size: 1.4vw;
+    text-align: justify;
+    padding: 3%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+#subscribe-field{
+    width: 85%;
+    height: 10%;
+    font-size: 1.3vw;
+}
+#subscribe-button{
+    background-color: rgb(30, 6, 69);
+    width: 90%;
+    height: 10%;
+    font-size: 1.5vw;
+    margin-top: 5%;
+    color: white;
+}
+#subscribe-button:hover{
+    background-color: rgb(0, 0, 0);
+    font-size: 1.56vw;
+}
+#about-me{
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+    box-shadow: -10px 0px 20px rgb(247, 246, 246);
+    background: linear-gradient(to right,rgb(145, 252, 252)) ;
+}
+
+#about-me:hover{
+    box-shadow: 0px 0px 10px rgba(250, 2, 2, 0.5);
+}
+@keyframes rightwardShadow {
+    0% {
+        box-shadow: -10px 0px 20px rgb(255, 0, 0); /* Initial shadow */
+    }
+    100% {
+        box-shadow: 10px 0px 20px rgb(21, 255, 0); /* Final shadow */
+    }
+}
+
+.about-me-image img{
+    width: 22%;
+    display: block;
+    float: left;
+    margin-left: 5%;
+    margin-top: 3.5%;
+    border-radius: 40%;
+    box-shadow: 10px 5px rgb(5, 0, 0);
+    background-color: #0120aa33;
+}
+.about-me-details {
+    font-size: 1.265vw; /* Base font size for desktop view */
+    margin-left: 5%;
+    margin-right: 2%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    align-items: center;
+    align-content: center;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .about-me-details {
+        font-size: 14px; /* Adjust font size for mobile view */
+    }
+    .obj-txt{
+        font-size: 14px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .skill-item{
+        font-size: 14px;
+        gap: 5%;
+        margin-left: 1%;
+    }
+
+    .footer-title{
+        font-size: 8px;
+    }
+
+    .footer-content1{
+        font-size: 10px;
+    }
+
+    .social-info{
+        margin-top: -6%;
+        margin-left: 2%;
+        text-align: left;
+        font-size: 8px;
+        gap: 2px;
+    }
+
+    .social-item{
+        gap: 1px;
+        padding-top: 7%;
+    }
+
+    .footer{
+        gap: 3px;
+    }
+
+    .item1{
+        font-size: 2.5vw;
+        padding-top: 2px;
+    }
+
+    .menu-icon{
+        position: absolute;
+    }
+
+}
+
+.letter-spacing{
+    letter-spacing: 1px;
+}
+
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0120aa; /* Default text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.social-item a:hover {
+    background-color: #333; /* Change background color on hover */
+    color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+  border: 4px;
+}
+
+.social-item i {
+    margin-right: 5px; /* Add space between icon and username */
+}
+
+.username {
+    margin-left: 10px; /* Add space between icon and username */
+}
+
+.website-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+    gap: 8px;
+}
+
+.website-item a{
+    padding: 10px;
+}

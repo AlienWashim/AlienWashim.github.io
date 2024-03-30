@@ -1,0 +1,321 @@
+.e-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-line {
+    border: 0;
+    height: 0.1%;
+    background-color: black;
+    margin-top: 5px;
+    padding: 1px;
+}
+
+.edu{
+    width: 100%;
+    height: auto;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: auto;
+}
+
+.edu-logo{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.edu-logo img{
+    width: 100%;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.edu-info{
+    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 1.5%;
+}
+
+.edu-info h2{
+    font-size: 1.8vw;
+}
+
+.normal-txt{
+    font-size: 1.4vw;
+}
+
+
+
+
+.exp-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-title {
+    border: 0;
+    background-color: rgb(2, 74, 92);
+    color: white;
+    margin-top: 5px;
+    padding: 1%;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.exp{
+    width: 100%;
+    height: auto;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: auto;
+}
+
+.exp-logo{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.exp-logo img{
+    width: 100%;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.exp-info{
+    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 1.5%;
+}
+
+.exp-info h2{
+    font-size: 1.8vw;
+}
+
+.project-link a{
+    text-decoration: underline;
+}
+.project-title a{
+    color: rgb(35, 0, 116);
+}
+
+.course-logo img{
+    margin-top: 5px;
+    width: 100%;
+    height: 250px;
+    margin-right: 100px;
+}
+
+
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.award-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content:space-evenly;
+  }
+  
+.award-item {
+    width: 30%; /* Adjust the width as needed */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+
+.navbar {
+    z-index: 1000; /* Set a higher z-index for the navbar */
+}
+
+
+.award-item:hover .text-container {
+    background-color:  rgba(2, 74, 92, 0.301);
+    border-radius: 0px;
+}
+
+.award-item:hover .title {
+    text-decoration-line: underline;
+}
+
+
+
+
+
+.award-item:hover .title::before {
+    margin-bottom: 3px; /* Adjust spacing between the top line and the text */
+}
+
+.award-item:hover .title::after {
+    margin-top: 5px; /* Adjust spacing between the bottom line and the text */
+}
+
+
+  
+.award-item img {
+    width: 100%;
+    height: auto;
+    border: 3px solid rgb(253, 253, 253);
+  }
+
+
+  
+
+  
+  .title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .description {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+
+.footer-image img{
+    position: absolute;
+    display: flex;
+    float: left;
+    width: 100%;
+    height: 200px;
+    opacity: 0.9;
+    background-size: cover;
+    padding-right: 20%;
+}
+
+.second-content{
+    width: 100%;
+    height: auto;
+}
+
+.skill-item{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    margin-left: 5%;
+    margin-top: 1%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .skill-item{
+        font-size: 12px;
+        gap: 0.5%;
+        margin-left: 0.5%;
+    }
+
+    .edu-info h2{
+        font-size: 15px;
+    }
+
+    .edu-logo img, .exp-logo img{
+        width: 100%;
+        height: 40px;
+        margin-right: 50px;
+    }
+
+    .normal-txt{
+        font-size: 12px;
+    }
+
+    .exp-info h1{
+        font-size: 15px;
+    }
+
+    .award-list{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .award-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+.exp-title button {
+    border-radius: 10px;
+    background-color: rgb(2, 74, 92);
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    padding: 6px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 5px 10px -8px rgba(236, 233, 233, 0.7);
+  }
+  
+  .exp-title button{
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+    padding-left: 20px;
+  }
+  
+  .exp-title button:after {
+    content: '  ▼';
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .exp-title button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .exp-title button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+
+.item2 {
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.item2:hover {
+    animation: bounce 0.5s infinite alternate;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 0, 0.8) inset, 0 0 10px 4px rgba(255, 255, 0, 0.8);
+    /* Change the background color */
+    background-color: #ffcc000e;
+}
+
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+
