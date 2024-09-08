@@ -61,14 +61,14 @@ function scrollToAboutMe() {
       // Get the height of the navbar
       var navbarHeight = document.querySelector('.navbar').offsetHeight;
       // Add the top margin of the navbar to the scroll position
-      var topMargin = 120; // Adjust this value as needed
+      var topMargin = 500; // Adjust this value as needed
   
       // Calculate the target scroll position
       var targetScrollPosition = aboutMeSection.offsetTop - navbarHeight - topMargin;
   
       // Scroll to the "About Me" section with smooth behavior
       window.scrollTo({
-        top: targetScrollPosition,
+        top: 5000,
         behavior: 'smooth'
       });
     }
@@ -121,3 +121,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // auto scroll to contact / footer end here...........................................
+
+
