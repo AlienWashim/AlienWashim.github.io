@@ -31,8 +31,10 @@ html{
 
 @media (max-width: 768px) { 
     .nevi2 {
-      flex-direction: row; 
+      flex-direction: column; 
       align-items: flex-start;
+      margin-top: 50px;
+      gap: 30%;
     }
   }
 
@@ -243,12 +245,6 @@ html{
         padding-bottom: 2px; /* Adjust padding for better spacing */
     }
 
-    .nevi2 {
-        gap: 3%; /* Reduce the gap between items */
-        box-shadow: inset 10px 0 5px -10px rgb(1, 94, 89), /* Dark green shadow on the left */
-                inset -10px 0 5px -10px rgb(1, 94, 89);
-        margin-top: 5px;
-    }
 
     .item1,
     .item2 {

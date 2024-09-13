@@ -22,33 +22,46 @@ function BadClicked(){
 
 // JavaScript to toggle the visibility of the navbar on smaller screens and restore it on window resize
 document.addEventListener('DOMContentLoaded', function() {
-    var menuIcon = document.getElementById('menu-icon');
-    var navbar = document.getElementById('navbar');
-    
-    // Function to toggle the visibility of the navbar
-    function toggleNavbar() {
-        navbar.classList.toggle('active');
-    }
-    
-    // Toggle the visibility of the navbar on clicking the menu icon
-    menuIcon.addEventListener('click', toggleNavbar);
-    
-    // Function to check the window width and toggle the navbar visibility accordingly
-    function checkWindowWidth() {
-        if (window.innerWidth <= 768) { // Adjust the breakpoint as needed
-            navbar.classList.remove('active');
-        } else {
-            
-            navbar.classList.add('active');
-        }
-    }
-    
-    // Call the function to check window width initially
-    checkWindowWidth();
-    
-    // Listen for window resize events and toggle navbar visibility accordingly
-    window.addEventListener('resize', checkWindowWidth);
+  var menuIcon = document.getElementById('menu-icon');
+  var navbar = document.getElementById('navbar');
+  
+  // Function to toggle the visibility of the navbar and update the icon
+  function toggleNavbar() {
+      navbar.classList.toggle('active');
+      
+      // Change the icon based on the visibility of the navbar
+      if (navbar.classList.contains('active')) {
+          menuIcon.querySelector('i').classList.remove('fa-eye-slash');
+          menuIcon.querySelector('i').classList.add('fa-eye');
+      } else {
+          menuIcon.querySelector('i').classList.remove('fa-eye');
+          menuIcon.querySelector('i').classList.add('fa-eye-slash');
+      }
+  }
+  
+  // Toggle the visibility of the navbar on clicking the menu icon
+  menuIcon.addEventListener('click', toggleNavbar);
+  
+  // Function to check the window width and toggle the navbar visibility accordingly
+  function checkWindowWidth() {
+      if (window.innerWidth <= 768) { // Adjust the breakpoint as needed
+          //navbar.classList.remove('active');
+          menuIcon.querySelector('i').classList.remove('fa-eye');
+          menuIcon.querySelector('i').classList.add('fa-eye-slash');
+      } else {
+          navbar.classList.add('active');
+          menuIcon.querySelector('i').classList.remove('fa-eye-slash');
+          menuIcon.querySelector('i').classList.add('fa-eye');
+      }
+  }
+  
+  // Call the function to check window width initially
+  checkWindowWidth();
+  
+  // Listen for window resize events and toggle navbar visibility accordingly
+  window.addEventListener('resize', checkWindowWidth);
 });
+
 
 
 //about me auto scroll start.......................................................
