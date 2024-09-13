@@ -178,18 +178,22 @@ html{
     padding-left: 4px;
     padding-right: 4px;
     letter-spacing: 1px;
+    border-radius: 26px;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 2px;
     box-shadow: 
-        -0.5em 0 0.5em -0.4em rgba(255, 255, 0, 0.8), 
-        0.5em 0 0.5em -0.4em rgba(255, 255, 0, 0.8), 
-        0 -0.5em 0.5em -0.4em rgba(255, 255, 0, 0.8), 
-        0 0.5em 0.5em -0.4em rgba(255, 255, 0, 0.8);
+        -0.2em 0 0.5em -0.4em rgba(255, 255, 0, 0.8), 
+        0.2em 0 0.5em -0.4em rgba(255, 255, 0, 0.8), 
+        0 -0.2em 0.5em -0.4em rgba(255, 255, 0, 0.8), 
+        0 0.2em 0.5em -0.4em rgba(255, 255, 0, 0.8);
     transition: box-shadow 0.25s, transform 0.25s; 
 }
 
 
 .item1:hover,
 .item1:focus {
-    box-shadow: 0 1em 0.9em -0.4em rgba(166, 255, 0, 0.8), 
+    box-shadow: 0 0.5em 0.9em -0.4em rgba(241, 241, 240, 0.8), 
                 0 0 0.5em -0.4em rgba(199, 255, 114, 0.8), 
                 -0.5em 0 0.5em -0.4em rgba(241, 241, 240, 0.8), 
                 0.5em 0 0.5em -0.4em rgba(244, 245, 243, 0.8); 
@@ -257,6 +261,7 @@ html{
         top: 1.5%;
         right: 3%;
     }
+
 }
 
 
@@ -281,14 +286,32 @@ html{
 }
 
 .footer {
-    background-size: cover; /* Adjust background size as needed */
+    background-color: rgb(2, 74, 92);
+    background-size:auto;
+    margin-top: 20px;
     background-position: center;
     width: 100%;
-    height: 22vw;
+    height:auto;
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 0px;
 }
+
+.footer-title{
+    background-color: rgb(255, 255, 255);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    letter-spacing: 2px;
+    color: black;
+    font-size: 1.1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+}
+
+
+
 .footer-content1{
     padding-left: 15%;
     padding-top: 15%;
@@ -311,7 +334,7 @@ html{
 }
 
 .footer-content2{
-    padding-top: 15%;
+    padding-top: 15px;
 }
 
 .footer-content3{
@@ -346,7 +369,7 @@ html{
 }
 
 .footer-hov:hover{
-    box-shadow: 0px 0px 20px rgb(0, 90, 5);
+    box-shadow: 0px 0px 20px rgb(224, 255, 225);
 }
 .contact-icon{
     letter-spacing: 2px;
@@ -365,11 +388,12 @@ html{
 }
 
 .ft-item11 {
-    margin-top: 5px;
+    margin: 0.5%;
     width: 100%;
     text-align: center;
     font-size: 1.4vw;
-    box-shadow: 0px 0px 5px 0px black;
+    box-shadow: inset 5px 5px 20px rgba(14, 0, 0, 0.205);
+    background-color: rgb(2, 74, 92);
     padding-right: 2px;
 }
 
@@ -487,25 +511,12 @@ html{
         margin-left: 1%;
     }
 
-    .footer-title{
-        font-size: 8px;
-    }
-
-    .footer-content1{
-        font-size: 10px;
-    }
-
     .social-info{
         margin-top: -6%;
         margin-left: 2%;
         text-align: left;
         font-size: 8px;
         gap: 2px;
-    }
-
-    .social-item{
-        gap: 1px;
-        padding-top: 7%;
     }
 
     .footer{
@@ -531,21 +542,19 @@ html{
 .social-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .social-item a {
-    display: flex;
-    align-items: center;
     text-decoration: none;
     color: #0120aa; 
     transition: background-color 0.3s, color 0.3s; 
     letter-spacing: 2px;
-    padding: 10px;
+    padding: 2%;
+    color: white;
 }
 
 .social-item a:hover {
-    background-color: #333; /* Change background color on hover */
+    background-color: #333; 
     color: #ffee10;
   box-shadow: 0 0 5px #ffee10;
   text-shadow: 0 0 5px #ffee10;
@@ -553,11 +562,11 @@ html{
 }
 
 .social-item i {
-    margin-right: 5px; /* Add space between icon and username */
+    margin-right: 5px; 
 }
 
 .username {
-    margin-left: 10px; /* Add space between icon and username */
+    margin-left: 10px; 
 }
 
 .website-item{
