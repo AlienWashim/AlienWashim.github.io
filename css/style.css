@@ -492,6 +492,12 @@ html{
 
 
 @media screen and (max-width: 768px) {
+
+    .about-me-image img{
+        width: 100%;
+        display: block;
+        float: top;
+    }
     .about-me-details {
         font-size: 14px; 
     }
@@ -544,7 +550,7 @@ html{
     text-decoration: none;
     color: #0120aa; 
     transition: background-color 0.3s, color 0.3s; 
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     padding: 2%;
     color: white;
 }
