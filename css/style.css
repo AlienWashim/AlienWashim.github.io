@@ -174,6 +174,7 @@ html{
 .item1 {
     color: rgb(226, 173, 0);
     font-size: 1.5vw;
+    font-family: 'Times New Roman', Times, serif;
     height: 100%;
     padding-top: 6px;
     padding-bottom: 2px;
@@ -191,6 +192,46 @@ html{
         0 0.2em 0.5em -0.4em rgba(255, 255, 0, 0.8);
     transition: box-shadow 0.25s, transform 0.25s; 
 }
+
+
+.item1.downloadCV {
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+  /* Container for dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    border-radius: 26px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Styling for dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Hover effect for dropdown links */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 26px;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 26px;
+  }
+  
+
 
 
 .item1:hover,
