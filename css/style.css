@@ -304,8 +304,7 @@ html{
 
 .content {
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    margin-top: 5px;
+    margin-top: 0px;
     padding-top: 2px;
 }
 
@@ -314,9 +313,6 @@ html{
     height: auto;
 }
 
-.main_content {
-    background-color: rgb(255, 255, 255);
-}
 
 .right_panel {
     margin-top: 1%;
@@ -507,16 +503,30 @@ html{
     }
 }
 
-.about-me-image img{
-    width: 22%;
-    display: block;
-    float: left;
-    margin-left: 5%;
-    margin-top: 3.5%;
-    border-radius: 40%;
-    box-shadow: 10px 5px rgb(5, 0, 0);
-    background-color: #0120aa33;
+.about-me-image {
+    width: 25%; /* Ensure the container has a defined width */
+    display: block; /* Block display */
+    float: left; /* Float the container left */
+    margin-left: 5%; /* Margin for spacing */
+    margin-top: 3.5%; /* Margin for spacing */
+    border-radius: 40%; /* Rounded corners for the container */
+    box-shadow: 10px 5px rgb(5, 0, 0); /* Shadow for the container */
+    overflow: hidden; /* Hide overflow to ensure smooth zoom */
+    background-color: #a8b0d69e;
 }
+
+.about-me-image img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 40%; /* Rounded corners for the image */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.about-me-image img:hover {
+    transform: scale(1.15); /* Scale the image slightly on hover */
+}
+
+
 .about-me-details {
     font-size: 1.265vw; 
     margin-left: 5%;
@@ -529,6 +539,14 @@ html{
     text-align: justify;
     align-items: center;
     align-content: center;
+
+     /* Glass effect styles */
+     backdrop-filter: blur(1px); /* Blurring and brightening behind the element */
+
+     /* Text background */
+    background-clip: text;
+    -webkit-background-clip: text;
+    
 }
 
 
