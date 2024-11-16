@@ -43,12 +43,45 @@
                 
             </div>
         </div> 
+
+        <!-- Image Viewer Modal -->
+<div id="imageViewer" class="image-viewer">
+    <span class="close-button" onclick="closeImageViewer()">×</span>
+    <img id="fullImage" src="" alt="Full View">
+</div>
         
 
         <div class="exp-content" id="exp-start">
 
             
             <div class="exp-title"><button><span>Software Development</span></button></div>
+            
+            <div class="exp">
+
+                <div class="exp-info project-title">
+
+                    <h1><b><a href="https://github.com/AlienWashim/StudentAttendanceManagementSystem-MVC">Employees Management System-ASP.NET-Core</a></b></h1>
+
+                    <div class="normal-txt">
+                        A user-friendly application for managing employee details. This system allows users to add, view, modify,
+                         and delete employee information efficiently. Built with ASP.NET Core, it features a clean design and ensures effective management of employee records.
+                       <br> <br>
+                            
+                        <div class="project-link"><b>Link:</b> <a href="https://github.com/AlienWashim/EmployeeManagementSystem-ASP.NET-Core">https://github.com/AlienWashim/EmployeeManagementSystem-ASP.NET-Core </a></div>    
+                    </div>
+
+                </div>
+
+                <div class="exp-logo">
+                    <img src="img/EmployeeManagement.png" alt="Attendance System" onclick="openImageViewer('img/EmployeeManagement.png')">
+                </div>
+
+            </div>
+
+            
+            <div class="horizontal-line"></div>
+
+            
             <div class="exp">
 
                 <div class="exp-info project-title">
@@ -241,8 +274,7 @@
         
                     <div class="social-item footer-content2">
                         <a href="https://github.com/AlienWashim"><i class="fab fa-github"></i> AlienWashim</a>
-                        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i> OurCollege</a>
-                        <!-- Add more social media icons as needed -->
+                        <a href="https://www.youtube.com/@AlienWashim"><i class="fab fa-youtube"></i> Washim Akram</a>
                     </div>
                     
                 </div>
@@ -269,3 +301,22 @@
 </body>
 
 </html>
+
+<script>
+    function openImageViewer(imageSrc) {
+    const imageViewer = document.getElementById("imageViewer");
+    const fullImage = document.getElementById("fullImage");
+    
+    // Set the image source and display the modal
+    fullImage.src = imageSrc;
+    imageViewer.style.display = "flex";
+}
+
+function closeImageViewer() {
+    const imageViewer = document.getElementById("imageViewer");
+    
+    // Hide the modal
+    imageViewer.style.display = "none";
+}
+
+</script>
