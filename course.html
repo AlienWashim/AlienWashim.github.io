@@ -42,6 +42,12 @@
                 
             </div>
         </div> 
+
+        <!-- Image Viewer Modal -->
+        <div id="imageViewer" class="image-viewer">
+            <span class="close-button" onclick="closeImageViewer()">×</span>
+            <img id="fullImage" src="" alt="Full View">
+        </div>
         
 
         <div class="e-content" id="edu-start">
@@ -239,3 +245,32 @@ tribute effectively to current and future projects. <br> <br>
 </body>
 
 </html>
+
+
+<script>
+    // Ensure the image viewer is hidden on page load
+    window.onload = function () {
+        const imageViewer = document.getElementById("imageViewer");
+        if (imageViewer) {
+            imageViewer.style.display = "none";
+        }
+    };
+    
+    // Function to open the image viewer
+    function openImageViewer(imageSrc) {
+        const imageViewer = document.getElementById("imageViewer");
+        const fullImage = document.getElementById("fullImage");
+
+        // Set the image source and display the modal
+        fullImage.src = imageSrc;
+        imageViewer.style.display = "flex";
+    }
+
+    // Function to close the image viewer
+    function closeImageViewer() {
+        const imageViewer = document.getElementById("imageViewer");
+
+        // Hide the modal
+        imageViewer.style.display = "none";
+    }
+</script>
