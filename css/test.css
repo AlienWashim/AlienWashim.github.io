@@ -34,6 +34,12 @@
     margin-right: 100px;
 }
 
+@media screen {
+    .edu-logo{
+        width: 30%;
+    }
+}
+
 .edu-info{
     width: 100%;
     margin-left: 5%;
@@ -94,7 +100,6 @@
     margin-right: 20px;
     cursor:pointer;
 }
-
 
 
 
@@ -174,11 +179,13 @@
     }
 
     .exp-logo {
-        margin-right: 0; /* Center align in column layout */
+        width: 100%;
+        height: auto;
     }
 
     .exp-logo img {
-        max-width: 120px; /* Adjust image size for smaller screens */
+        width: 100%;
+        height: auto;
         margin-right: 0;
     }
 
@@ -189,6 +196,12 @@
 
     .exp-info h2 {
         font-size: 4vw; /* Adjust font size for readability */
+    }
+
+    .exp-logo iframe{
+        text-align: center;
+        width: 80%;
+        height: auto;
     }
 }
 
@@ -205,6 +218,15 @@
     width: 100%;
     height: 250px;
     margin-right: 100px;
+}
+
+@media screen {
+    .course-logo img{
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        margin-right: 100px;
+    }
 }
 
 
@@ -328,7 +350,6 @@
 
     .edu-logo img, .exp-logo img{
         width: 100%;
-        height: 40px;
         margin-right: 50px;
     }
 

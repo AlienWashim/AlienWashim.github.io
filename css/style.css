@@ -320,15 +320,38 @@ html{
 
 .footer {
     background-color: rgb(2, 74, 92);
-    background-size:auto;
+    background-size: auto;
     margin-top: 20px;
     background-position: center;
     width: 100%;
-    height:auto;
+    height: auto;
     display: flex;
     flex-direction: row;
-    gap: 0px;
+    gap: 20px;
+    padding: 10px;
+    justify-content: space-around;
 }
+
+.ft-item11 {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .ft-item11 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
 
 .footer-title{
     background-color: rgb(255, 255, 255);
@@ -337,42 +360,99 @@ html{
     letter-spacing: 2px;
     color: black;
     font-size: 1.1vw;
-    font-family: Arial, Helvetica, sans-serif;
     
     border-bottom-left-radius: 26px;
     border-bottom-right-radius: 26px;
 }
 
 
-
-.footer-content1{
+.footer-content1 {
     padding-left: 15%;
     padding-top: 15%;
+    font-size: 1.2rem;
 }
 
-.social-info a:hover{
-    background-color: #333; /* Change background color on hover */
+.social-info a:hover {
+    background-color: #333;
     color: #ffee10;
-  box-shadow: 0 0 5px #ffee10;
-  text-shadow: 0 0 5px #ffee10;
-  border: 4px;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+    border: 4px;
+    font-size: 1rem;
 }
 
-.website-item a:hover{
-    background-color: #333; /* Change background color on hover */
+.website-item a:hover {
+    background-color: #333;
     color: #ffee10;
-  box-shadow: 0 0 5px #ffee10;
-  text-shadow: 0 0 5px #ffee10;
-  border: 4px;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+    border: 4px;
+    font-size: 1rem;
 }
 
-.footer-content2{
+.footer-content2 {
     padding-top: 15px;
+    font-size: 1.5rem;
 }
 
-.footer-content3{
+.footer-content3 {
     padding-top: 15%;
+    font-size: 1.2rem;
 }
+
+@media (max-width: 768px) {
+    .footer-content1 {
+        padding-left: 10%;
+        padding-top: 10%;
+        font-size: 1rem;
+    }
+
+    .footer-title{
+        font-size: 0.9rem;
+    }
+    .social-info a:hover {
+        font-size: 0.9rem;
+    }
+
+    .website-item a:hover {
+        font-size: 0.9rem;
+    }
+
+    .footer-content2 {
+        font-size: 1rem;
+    }
+
+    .footer-content3 {
+        padding-top: 10%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content1 {
+        padding-left: 5%;
+        padding-top: 5%;
+        font-size: 0.9rem;
+    }
+
+    .social-info a:hover {
+        font-size: 0.8rem;
+    }
+
+    .website-item a:hover {
+        font-size: 0.8rem;
+    }
+
+    .footer-content2 {
+        font-size: 0.9rem;
+    }
+
+    .footer-content3 {
+        padding-top: 5%;
+        font-size: 0.9rem;
+    }
+}
+
 
 
 .lp-item1 {
@@ -566,11 +646,38 @@ html{
         padding-right: 5%;
     }
 
-    .skill-item{
+    .skill-item {
         font-size: 14px;
-        gap: 5%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 10px;
+        justify-content: space-around;
         margin-left: 1%;
     }
+    
+    @media (max-width: 768px) {
+        .skill-item {
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 0;
+            padding: 5px;
+            font-size: 12px;
+            justify-content: flex-start; /* Align items to the top */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .skill-item {
+            flex-direction: column;
+            font-size: 11px;
+            gap: 5px;
+            padding: 5px;
+            justify-content: flex-start; /* Align items to the top */
+        }
+    }
+    
+    
 
     .social-info{
         margin-top: -6%;
@@ -643,8 +750,6 @@ html{
 }
 
 .my-skill ul {
-    
-
     li{
         padding: 5px;
         border-top: .5px solid rgba(0, 0, 0, 0.144);
