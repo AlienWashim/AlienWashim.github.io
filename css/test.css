@@ -1,3 +1,115 @@
+
+  /* Container Layout */
+  .main-container {
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Top Section */
+  .top-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .image-container img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .intro-text {
+    flex: 1;
+  }
+  
+  .typing {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2b6777;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .typed-name {
+    color: #52ab98;
+    margin-left: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .cursor {
+    display: inline-block;
+    color: #2b6777;
+    font-weight: bold;
+    animation: blink 0.75s step-end infinite;
+    margin-left: 2px;
+  }
+  
+
+  
+  
+  .intro-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  /* Bottom Section */
+  .bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .left-info, .right-info {
+    flex: 1;
+    min-width: 280px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .left-info h2, .right-info h2 {
+    color: #2b6777;
+    margin-bottom: 10px;
+  }
+  
+  .left-info p, .right-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Typing Animation */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .top-section, .bottom-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center
+    }
+  
+    .intro-text {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .typing {
+      font-size: 1.8rem;
+    }
+  }
+  
+
+  
+
 .e-content{
     display: flex;
     flex-direction: column;
@@ -95,7 +207,7 @@
 .exp-logo img {
     width: 100%;
     max-width: 450px;
-    height: auto;
+    height: fit-content;
     margin-right: 20px;
     cursor:pointer;
 }
@@ -257,7 +369,7 @@
 
 
 .navbar {
-    z-index: 1000; /* Set a higher z-index for the navbar */
+    z-index: 1000; 
 }
 
 
@@ -322,6 +434,7 @@
 }
 
 .skill-item{
+    font-size: clamp(1.2rem, 1.4vw, 1rem);
     display: flex;
     flex-direction: row;
     gap: 20%;
@@ -332,13 +445,8 @@
 
 @media screen and (max-width: 768px) {
 
-      .exp-title {
-        font-size: 16px;
-      }
-
 
     .skill-item{
-        font-size: 12px;
         gap: 0.5%;
         margin-left: 0.5%;
     }
@@ -387,12 +495,13 @@
     border: none;
     color: #fff;
     text-align: center;
-    font-size: clamp(16px, 1.9vw, 32px);
     padding: 6px;
     width: 100%;
     transition: all 0.5s;
     cursor: pointer;
     box-shadow: 0 5px 10px -8px rgba(236, 233, 233, 0.7);
+    
+    font-size: clamp(1.2rem, 1.4vw, 1.6rem);
   }
   
   .exp-title button{

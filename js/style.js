@@ -1,6 +1,54 @@
 
 window.onscroll = function() {scrollFunction()};
 
+window.onload = function () {
+  const typedText = document.getElementById("typed-text");
+  const cursor = document.querySelector(".cursor");
+
+  if (!typedText || !cursor) return;
+
+  const titles = [
+    "Md Washim Akram",
+    "a Software Engineer",
+    "a Problem Solver",
+    "a Researcher",
+    "an Explorer",
+    "a Tech Enthusiast",
+    "a Lifelong Learner"
+  ];
+
+  let titleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let delay = 100;
+
+  function typeLoop() {
+    const currentTitle = titles[titleIndex];
+    if (isDeleting) {
+      typedText.textContent = currentTitle.substring(0, charIndex--);
+    } else {
+      typedText.textContent = currentTitle.substring(0, charIndex++);
+    }
+
+    if (!isDeleting && charIndex === currentTitle.length + 1) {
+      isDeleting = true;
+      delay = 3500;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      titleIndex = (titleIndex + 1) % titles.length;
+      delay = 300;
+    } else {
+      delay = isDeleting ? 50 : 100;
+    }
+
+    setTimeout(typeLoop, delay);
+  }
+
+  typeLoop();
+};
+
+
+
 function scrollFunction() {
     var navbar = document.getElementById("navbar");
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
