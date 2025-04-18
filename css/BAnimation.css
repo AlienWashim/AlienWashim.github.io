@@ -47,3 +47,14 @@ section span:hover {
     background: #0f0;
     transition: 0s;
 }
+
+
+@media screen and (max-width: 768px){
+    section span {
+        width: 16.25vw;
+        height: 16.25vw;
+        background: #ffffff;
+        transition: 1.5s;
+        z-index: -1;
+    }
+}
