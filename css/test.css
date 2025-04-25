@@ -9,7 +9,7 @@
   .top-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     margin-bottom: 40px;
   }
   
@@ -52,7 +52,7 @@
   
   
   .intro-text p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.6;
   }
   
@@ -92,6 +92,7 @@
   
   @media (max-width: 768px) {
     .top-section, .bottom-section {
+      gap: 10px;
       flex-direction: column;
       align-items: center;
       text-align: center
