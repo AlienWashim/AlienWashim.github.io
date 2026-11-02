@@ -104,6 +104,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: var(--nav-height); /* Seamless clearance for fixed floating header */
   overflow-x: hidden;
   transition: background-color var(--transition-normal), color var(--transition-normal);
   background-image: 
@@ -272,7 +273,7 @@ main {
    Header & Navigation
    ========================================================================== */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -289,7 +290,13 @@ main {
 }
 
 .header.scrolled {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] .header.scrolled {
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  border-bottom-color: rgba(15, 23, 42, 0.08);
 }
 
 .nav-container {
@@ -1656,7 +1663,8 @@ main {
   border-top: 1px solid var(--border-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   gap: 1rem;
   font-size: 0.875rem;
