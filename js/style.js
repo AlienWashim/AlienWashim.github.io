@@ -179,18 +179,33 @@ function setupMobileNav() {
     
     mobileToggle.addEventListener('click', () => {
       const isOpen = navMenu.classList.toggle('active');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
       const icon = mobileToggle.querySelector('i');
       if (icon) {
         icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
       }
     });
 
+    // Close menu when clicking outside
     document.addEventListener('click', (e) => {
       if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target) && navMenu.classList.contains('active')) {
         navMenu.classList.remove('active');
+        document.body.style.overflow = '';
         const icon = mobileToggle.querySelector('i');
         if (icon) icon.className = 'fa-solid fa-bars';
       }
+    });
+
+    // Close menu immediately when any nav link is tapped
+    navMenu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navMenu.classList.contains('active')) {
+          navMenu.classList.remove('active');
+          document.body.style.overflow = '';
+          const icon = mobileToggle.querySelector('i');
+          if (icon) icon.className = 'fa-solid fa-bars';
+        }
+      });
     });
   }
 }
