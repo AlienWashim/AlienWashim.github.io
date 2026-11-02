@@ -1,545 +1,395 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washim Akram</title>
+    <title>Enterprise &amp; Open Source Projects | Md Washim Akram</title>
+    <meta name="description" content="Software development projects by Md Washim Akram: Enterprise ASP.NET Core Web APIs, Angular, SignalR ChatHub, Blazor, MS SQL Server, SSRS, React, and Windows Forms.">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/test.css">
     <link rel="icon" type="image/x-icon" href="img/icon.jpg">
-    <script src="js/style.js"></script>
+
+    <!-- Script -->
+    <script src="js/style.js" defer></script>
 </head>
 
 <body>
-    <div class="main_container">
+    <!-- Top Progress Bar -->
+    <div id="page-progress-bar"></div>
 
-        <div class="header" id="head">
-
-
-            <div class="menu-icon" id="menu-icon">
-                <i class="fas fa-bars"></i> <!-- Font Awesome menu icon -->
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Md Washim Akram" class="nav-brand-avatar">
             </div>
+          </div>
+          <div class="nav-brand-text">
+                    <span class="nav-brand-name">Washim Akram</span>
+                    <span class="nav-brand-role">Software Developer</span>
+                </div>
+            </a>
 
-            <div class="navbar" id="navbar">
-                <div class="nevi1">
-                    <div class="item1"><a href="index.html#about-me"><i class="fa-solid fa-face-grin-hearts"> About
-                                Me</i></a></div>
-                    <div class="item1"><a href="files/Md Washim Akram_CV.pdf" download="Your_CV_Name.pdf"><i
-                                class=" fa-solid fa-graduation-cap"> My CV</i></a></div>
-                    <div class="item1"><a href="#footer"><i class="fa-solid fa-address-book"> Contact</i></a></div>
+            <nav class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="project.html" class="nav-link active">Projects</a>
+                    <a href="research.html" class="nav-link">Research</a>
+                    <a href="award.html" class="nav-link">Awards</a>
+                    <a href="course.html" class="nav-link">Courses</a>
+                    <a href="activity.html" class="nav-link">Activities</a>
                 </div>
 
-                <div class="nevi2">
-                    <div class="item2"><a href="education.html">Education</a></div>
-                    <div class="item2"><a href="experience.html">Experiences</a></div>
-                    <div class="item2"><a href="research.html">Research Experience</a></div>
-                    <div class="item2"><a href="project.html">Projects</a></div>
-                    <div class="item2"><a href="course.html">Courses</a></div>
-                    <div class="item2"><a href="award.html">Award and Certification</a></div>
-                    <div class="item2"><a href="activity.html">Extra-curricular Activities</a></div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                    <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                        <i class="fa-solid fa-file-arrow-down"></i> Resume
+                    </a>
+                </div>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-code-branch"></i> Systems &amp; Solutions</span>
+                <h1 class="section-title">Featured Projects &amp; Products</h1>
+                <p class="section-subtitle">Real-world enterprise production systems, full-stack web applications, real-time communication hubs, and desktop automation.</p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="card-grid">
+                <!-- 1. AkijBashir Group Complaint Management System -->
+                <div class="project-card">
+                    <div class="project-img-wrapper" style="background: linear-gradient(135deg, #1e3a8a, #0f172a); display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-headset" style="font-size: 4.5rem; color: #38bdf8;"></i>
+                    </div>
+                    <div class="project-body">
+                        <span class="badge badge-emerald" style="align-self: flex-start; margin-bottom: 0.65rem;">Production Enterprise System</span>
+                        <h2 class="project-title">Centralized Complaint Management System</h2>
+                        <p class="project-desc">
+                            Built for the entire <strong>AkijBashir Group</strong> using <strong>ASP.NET Core Web API</strong> and <strong>Angular</strong>. Currently running live in production across Bathware and Sanitaryware units, designed with scalable multi-tenant architecture for seamless group-wide rollout.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">ASP.NET Core Web API</span>
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">MS SQL Server</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-        </div>
+                <!-- 2. Akij Glass Production & SSRS Module -->
+                <div class="project-card">
+                    <div class="project-img-wrapper" style="background: linear-gradient(135deg, #0e7490, #0f172a); display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-industry" style="font-size: 4.5rem; color: #22d3ee;"></i>
+                    </div>
+                    <div class="project-body">
+                        <span class="badge badge-cyan" style="align-self: flex-start; margin-bottom: 0.65rem;">Akij Glass Industries Ltd.</span>
+                        <h2 class="project-title">Glass Manufacturing Production Module</h2>
+                        <p class="project-desc">
+                            Developed and deployed a full production lifecycle management module for <strong>Akij Glass Industries Ltd.</strong> Built using <strong>ASP.NET Core Web API</strong>, <strong>Angular</strong>, MS SQL Server, and integrated <strong>SSRS (MS Report Server)</strong> for automated batch reporting.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">ASP.NET Core</span>
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">SSRS Reports</span>
+                            <span class="tech-tag">SQL Optimization</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Image Viewer Modal -->
-        <div id="imageViewer" class="image-viewer">
-            <span class="close-button" onclick="closeImageViewer()">×</span>
-            <img id="fullImage" src="" alt="Full View">
-        </div>
+                <!-- 3. SignalR Real-Time ChatHub with MudBlazor -->
+                <div class="project-card">
+                    <div class="project-img-wrapper" style="cursor: pointer;" onclick="openModal('img/ChatRoom.png')">
+                        <img src="img/ChatRoom.png" alt="SignalR ChatHub and Real-Time System">
+                    </div>
+                    <div class="project-body">
+                        <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: 0.65rem;">Real-Time Communication</span>
+                        <h2 class="project-title">SignalR ChatHub &amp; Log Management</h2>
+                        <p class="project-desc">
+                            Real-time messaging hub and activity log system developed with <strong>ASP.NET Core</strong>, <strong>SignalR</strong>, and <strong>MudBlazor</strong>. Features WebSocket channels, presence tracking, role-based authorization, and centralized logging.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">SignalR</span>
+                            <span class="tech-tag">MudBlazor</span>
+                            <span class="tech-tag">ASP.NET Core</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">Real-Time</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn btn-sm btn-secondary" onclick="openModal('img/ChatRoom.png')">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- 4. Blazor & MudBlazor Employee Portal -->
+                <div class="project-card">
+                    <div class="project-img-wrapper" style="cursor: pointer;" onclick="openModal('img/EmployeeManagement.png')">
+                        <img src="img/EmployeeManagement.png" alt="Blazor Employee Portal">
+                    </div>
+                    <div class="project-body">
+                        <span class="badge badge-purple" style="align-self: flex-start; margin-bottom: 0.65rem;">Modern Enterprise Blazor</span>
+                        <h2 class="project-title">Blazor Employee Management Portal</h2>
+                        <p class="project-desc">
+                            A responsive enterprise web application built using <strong>Blazor WebAssembly</strong> and <strong>MudBlazor components</strong>, backed by Entity Framework Core and SQL Server. Implements advanced search, multi-column filtering, and server-side pagination.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Blazor WASM</span>
+                            <span class="tech-tag">MudBlazor</span>
+                            <span class="tech-tag">EF Core</span>
+                            <span class="tech-tag">MS SQL Server</span>
+                            <span class="tech-tag">Pagination</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn btn-sm btn-secondary" onclick="openModal('img/EmployeeManagement.png')">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="exp-content" id="exp-start">
+                <!-- 5. Student Attendance Management System -->
+                <div class="project-card">
+                    <div class="project-img-wrapper" style="cursor: pointer;" onclick="openModal('img/Attendance.png')">
+                        <img src="img/Attendance.png" alt="Student Attendance Management System">
+                    </div>
+                    <div class="project-body">
+                        <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: 0.65rem;">Academic System</span>
+                        <h2 class="project-title">Student Attendance Management (MVC)</h2>
+                        <p class="project-desc">
+                            A streamlined, robust administrative system engineered with <strong>ASP.NET MVC</strong> and MS SQL Server to oversee department structures, student enrollment, and automated attendance reporting with clean CRUD controllers.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">ASP.NET MVC</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AlienWashim/Student-Attendance-Management-System-MVC" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn btn-sm btn-secondary" onclick="openModal('img/Attendance.png')">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-
-
-
-            
-
-
-            <div class="exp-title"><button><span>Software Development</span></button></div>
-
-
-            
-            <div class="exp">
-
-                <div class="exp-info project-title">
-            
-                    <h1><b><a href="https://github.com/AlienWashim/React-Todo-App" target="_blank">React Todo App 📝</a></b></h1>
-            
-                    <div class="normal-txt">
-                        A simple and elegant Todo App built using React and Bootstrap to manage daily tasks efficiently.
-                        <br><br>
-                        <h3>Key Technologies Used:</h3>
-                        
-                        <ul>
-                            <li>React – Frontend library</li>
-                            <li>TypeScript – For type safety and developer experience</li>
-                            <li>Bootstrap – For UI components and responsive design</li>
-                            <li>React Bootstrap – Bootstrap components in React</li>
-                            <li>CSS Flexbox & Utility Classes – Layouts and styling</li>
-                          </ul>
-                          
-            
-                        <div class="project-link"><b>Link:</b> 
-                            <a href="https://github.com/AlienWashim/React-Todo-App" target="_blank">
-                                https://github.com/AlienWashim/React-Todo-App
+                <!-- 6. React & TypeScript Todo App -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/0EWiec0R9tw?si=Rm1iT8mbTrum91Pm" 
+                            title="React Todo App Demo" 
+                            style="border: none;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="project-body">
+                        <span class="badge badge-cyan" style="align-self: flex-start; margin-bottom: 0.65rem;">Frontend &amp; TypeScript</span>
+                        <h2 class="project-title">Modern React &amp; TypeScript Todo App</h2>
+                        <p class="project-desc">
+                            A responsive task management application built with <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Bootstrap</strong>. Features state persistence, task priority filtering, and clean component-driven architecture.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">React Bootstrap</span>
+                            <span class="tech-tag">Flexbox</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AlienWashim/React-Todo-App" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=0EWiec0R9tw" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                <i class="fa-brands fa-youtube text-emerald"></i> Demo Video
                             </a>
                         </div>
                     </div>
-            
                 </div>
-            
-                <div class="exp-logo">
-                    <iframe 
-                        id="videoFrame" 
-                        src="https://www.youtube.com/embed/0EWiec0R9tw?si=Rm1iT8mbTrum91Pm" 
-                        width="450rem" 
-                        height="253rem" 
-                        style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" 
-                        allowfullscreen>
-                    </iframe>
-            
-                    <h4>
-                        Watch the project demonstration on 
-                        <a href="https://www.youtube.com/watch?v=0EWiec0R9tw" target="_blank">YouTube</a>
-                    </h4>
-                </div>
-            
-            </div>
-            
-            <div class="horizontal-line"></div>            
 
-
-
-            <div class="exp">
-
-                <div class="exp-info project-title">
-
-                    <h1><b><a href="https://github.com/AlienWashim/EasyTechBD_ASP.NET_WebApplication_MVC" target="_blank">EasyTech BD</a></b></h1>
-
-                    <div class="normal-txt">
-                        Easy Tech BD is a web application built using ASP.NET MVC that showcases my learning journey in
-                        software development.
-                        <br> <br>
-                        <h3>Key Technologies Used:</h3>
-                        <ul>
-                            <li>ASP.NET Web Application MVC</li>
-                            <li>Entity Framework for database operations</li>
-                            <li>Microsoft SQL Server for data storage</li>
-                            <li>Data Annotations for model validation</li>
-                            <li>Responsive Design with Bootstrap</li>
-                        </ul>
-
-
-                        <div class="project-link"><b>Link:</b> <a
-                                href="https://github.com/AlienWashim/EasyTechBD_ASP.NET_WebApplication_MVC" target="_blank">https://github.com/AlienWashim/EasyTechBD_ASP.NET_WebApplication_MVC</a>
+                <!-- 7. EMed Store & WinForms XML Processing -->
+                <div class="project-card">
+                    <div class="project-img-wrapper" style="background: linear-gradient(135deg, #1e293b, #0f172a); display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-brands fa-windows" style="font-size: 4rem; color: #38bdf8;"></i>
+                    </div>
+                    <div class="project-body">
+                        <span class="badge badge-amber" style="align-self: flex-start; margin-bottom: 0.65rem;">Desktop Applications</span>
+                        <h2 class="project-title">EMed Store &amp; XML Processor</h2>
+                        <p class="project-desc">
+                            C# <strong>Windows Forms</strong> applications engineered for enterprise retail management and automated XML data parsing, filtering, and high-performance search routines.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">WinForms</span>
+                            <span class="tech-tag">XML Processing</span>
+                            <span class="tech-tag">Desktop UI</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="exp-logo">
-                    <iframe 
-                        id="videoFrame" 
-                        src="https://www.youtube.com/embed/qXIUisbSckM" 
-                        width="450rem" 
-                        height="253rem" 
-                        style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" 
-                        allowfullscreen>
-                    </iframe>
-                    
-                    <h4>
-                        Watch the project demonstration on 
-                        <a href="https://www.youtube.com/embed/qXIUisbSckM" target="_blank">YouTube</a>
-                    </h4>
-                </div>                
-
-            </div>
-
-
-            <div class="horizontal-line"></div>
-
-
-
-
-            <div class="exp">
-
-                <div class="exp-info project-title">
-
-                    <h1><b><a href="https://github.com/AlienWashim/PersonalBlogWebsite" target="_blank">Personal Blog Website</a></b>
-                    </h1>
-
-                    <div class="normal-txt">
-                        A fully responsive Personal Blog Website built using the ASP.NET MVC framework. This project
-                        includes a user-friendly interface for blog browsing and commenting,
-                        alongside a robust admin panel for managing blog posts, categories, and comments.
-                        <br> <br>
-
-                        <div class="project-link"><b>Link:</b> <a
-                                href="https://github.com/AlienWashim/PersonalBlogWebsite" target="_blank">https://github.com/AlienWashim/PersonalBlogWebsite</a>
+                <!-- 8. Personal Blog & CMS -->
+                <div class="project-card">
+                    <div class="project-img-wrapper" style="cursor: pointer;" onclick="openModal('img/PersonalBlogWebsite.png')">
+                        <img src="img/PersonalBlogWebsite.png" alt="Personal Blog Website">
+                    </div>
+                    <div class="project-body">
+                        <span class="badge badge-emerald" style="align-self: flex-start; margin-bottom: 0.65rem;">Publishing System</span>
+                        <h2 class="project-title">Enterprise Personal Blog &amp; CMS</h2>
+                        <p class="project-desc">
+                            A complete blog publishing platform built using <strong>ASP.NET MVC</strong>. Includes rich article authoring, user comments, category management, and an administrative dashboard.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">ASP.NET MVC</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Authentication</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn btn-sm btn-secondary" onclick="openModal('img/PersonalBlogWebsite.png')">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> Preview
+                            </button>
                         </div>
                     </div>
-
                 </div>
-
-                <div class="exp-logo">
-                    <iframe 
-                        id="videoFrame" 
-                        src="https://www.youtube.com/embed/60Ms7GUv_NE" 
-                        width="450rem" 
-                        height="253rem" 
-                        style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" 
-                        allowfullscreen>
-                    </iframe>
-                    
-                    <h4>
-                        Watch the project demonstration on 
-                        <a href="https://www.youtube.com/watch?v=60Ms7GUv_NE" target="_blank">YouTube</a>
-                    </h4>
-                </div> 
-
             </div>
-
-
-            <div class="horizontal-line"></div>
-
-
-            <div class="exp">
-
-                <div class="exp-info project-title">
-
-                    <h1><b><a href="https://github.com/AlienWashim/EmployeeManagementSystem-ASP.NET-Core" target="_blank">Employees
-                                Management System-ASP.NET-Core</a></b></h1>
-
-                    <div class="normal-txt">
-                        A user-friendly application for managing employee details. This system allows users to add,
-                        view, modify,
-                        and delete employee information efficiently. Built with ASP.NET Core, it features a clean design
-                        and ensures effective management of employee records.
-                        <br> <br>
-
-                        <div class="project-link"><b>Link:</b> <a
-                                href="https://github.com/AlienWashim/EmployeeManagementSystem-ASP.NET-Core" target="_blank">https://github.com/AlienWashim/EmployeeManagementSystem-ASP.NET-Core
-                            </a></div>
-                    </div>
-
-                </div>
-
-                <div class="exp-logo">
-                    <img src="img/EmployeeManagement.png" alt="Employee Management System" title="Click to view the image"
-                        onclick="openImageViewer('img/EmployeeManagement.png')">
-                </div>
-
-            </div>
-
-
-            <div class="horizontal-line"></div>
-
-
-            <div class="exp">
-
-                <div class="exp-info project-title">
-
-                    <h1><b><a href="https://github.com/AlienWashim/StudentAttendanceManagementSystem-MVC" target="_blank">Student
-                                Attendance Management System-MVC</a></b></h1>
-
-                    <div class="normal-txt">
-                        This project has been an excellent opportunity to deepen my knowledge of ASP.NET MVC and
-                        Microsoft SQL Server Management Studio. The system offers a streamlined way to manage
-                        Departments, Students, and Attendance. It features essential CRUD operations for managing
-                        departments and students, along with a robust attendance system.
-                        <br> <br>
-
-                        <div class="project-link"><b>Link:</b> <a
-                                href="https://github.com/AlienWashim/StudentAttendanceManagementSystem-MVC" target="_blank">https://github.com/AlienWashim/StudentAttendanceManagementSystem-MVC
-                            </a></div>
-                    </div>
-
-                </div>
-
-                <div class="exp-logo">
-                    <img src="img/Attendance.png" alt="Attendance System" title="Click to view the image"
-                        onclick="openImageViewer('img/Attendance.png')">
-                </div>
-
-            </div>
-
-
-            <div class="horizontal-line"></div>
-
-            <div class="exp">
-
-                <div class="exp-info project-title">
-
-                    <h1><b><a href="https://github.com/AlienWashim/SignalR-Chatroom" target="_blank">SignalR Chatroom</a></b></h1>
-
-                    <div class="normal-txt">
-                        <p>
-                            Throughout this project, I have enhanced my skills in:
-                        <ul>
-                            <li>ASP.NET Framework</li>
-                            <li>C# Programming Language</li>
-                            <li>JavaScript & jQuery</li>
-                            <li>SignalR for real-time communication</li>
-                            <li>HTML5 & CSS3 for creating responsive and visually appealing designs</li>
-                        </ul>
-                        </p>
-                        <br>
-                        <p>
-                            The chat room system includes several key features that showcase my understanding of modern
-                            web development:
-                        <ul>
-                            <li>Real-time messaging with live updates using SignalR</li>
-                            <li>Dynamic user interaction, including join and leave notifications</li>
-                            <li>Secure user handling and session management</li>
-                        </ul>
-                        </p>
-                        <div class="project-link"><b>Link:</b> <a
-                                href="https://github.com/AlienWashim/SignalR-Chatroom" target="_blank">https://github.com/AlienWashim/SignalR-Chatroom
-                            </a></div>
-                    </div>
-
-                </div>
-
-                <div class="exp-logo">
-                    <img src="img/ChatRoom.png" alt="ChatRoom" title="Click to view the image" onclick="openImageViewer('img/ChatRoom.png')">
-                </div>
-
-            </div>
-
-
-            <div class="exp-title"><button><span>Security Based Project</span></button></div>
-
-            <div class="exp">
-
-                <div class="exp-info project-title">
-
-                    <h1><b><a href="https://github.com/AlienWashim/RSA-Encryption-Decryption-Algorithm" target="_blank">RSA
-                                Encryption-Decryption Algorithm</a></b></h1>
-
-                    <div class="normal-txt">
-                        <b>Features</b> <br>
-                        <ul>
-                            <li> <b>RSA Encryption: </b> Convert plaintext into ciphertext using RSA public key
-                                encryption.</li>
-                            <li> <b>RSA Decryption:</b> Convert ciphertext back into plaintext using RSA private key
-                                decryption.</li>
-                            <li> <b>Responsive Design: </b> Adaptable layout for different screen sizes.</li>
-                            <li> <b>Interactive Elements:</b> Buttons and text areas with dynamic styling and background
-                                effects.</li>
-                        </ul>
-                        <div class="project-link"><b>Link:</b> <a
-                                href="https://github.com/AlienWashim/RSA-Encryption-Decryption-Algorithm" target="_blank">https://github.com/AlienWashim/RSA-Encryption-Decryption-Algorithm
-                            </a></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="exp-title"><button><span>Machine Learning Project</span></button></div>
-
-            <div class="exp">
-
-                <div class="exp-info project-title">
-
-                    <h1><b><a href="https://github.com/AlienWashim/Predictive-Health" target="_blank">Predictive Health</a></b></h1>
-
-                    <div class="normal-txt">
-                        The fusion of advanced AI, user-centric design, and forward-thinking aspirations position
-                        Predictive Health
-                        as a beacon of change in the realm of healthcare, promising to elevate accessibility, accuracy,
-                        and user
-                        engagement to unprecedented heights. <br>
-                        <ul>
-                            <li> <b>Tools & technologies used:</b> Python, Logistic Regression, Neural Network</li>
-                            <li> <b>Achievements/Outputs:</b> Seamlessly integrated advanced AI models with
-                                user-friendly interfaces, empowering
-                                users to predict health diseases based on input symptoms with unprecedented efficiency.
-                            </li>
-                        </ul>
-                        <div class="project-link"><b>Link:</b> <a
-                                href="https://github.com/AlienWashim/Predictive-Health" target="_blank">https://github.com/AlienWashim/Predictive-Health
-                            </a></div>
-                    </div>
-
-                </div>
-
-                <div class="edu-logo">
-                    <img src="img/PredictiveHealth.png" alt="Predictive Health"
-                        onclick="openImageViewer('img/PredictiveHealth.png')">
-                </div>
-
-            </div>
-
-
-            <div class="exp-title"><button><span>Java-based Project</span></button></div>
-
-            <div class="exp">
-
-                <div class="exp-info project-title">
-
-                    <h1><b><a href="https://github.com/AlienWashim/Lan-Chat-File-Sharing-V1" target="_blank">Lan Chat & File Sharing
-                                Application</a></b></h1>
-
-                    <div class="normal-txt">
-                        Developed a real-time communication and file exchange application using Java for seamless
-                        collaboration
-                        within a local network. Implemented features for connecting users via IP addresses and enabling
-                        chat
-                        functionality for problem-solving and facilitating remote communication. <br>
-                        <ul>
-                            <li> <b>Tools & technologies used:</b> Java, Networking</li>
-                            <li> <b>Achievements/Outputs:</b> Enhanced communication efficiency, facilitated seamless
-                                collaboration among users, im-
-                                plemented real-time chat and file exchange features.</li>
-                        </ul>
-                        <div class="project-link"><b>Link:</b> <a
-                                href="https://github.com/AlienWashim/Lan-Chat-File-Sharing-V1" target="_blank">https://github.com/AlienWashim/Lan-Chat-File-Sharing-V1
-                            </a></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="horizontal-line"></div>
-
-            <div class="exp">
-
-                <div class="exp-info project-title">
-
-                    <h1><b><a href="https://github.com/AlienWashim/Phonebook-Project-Using-java" target="_blank">Phonebook</a></b></h1>
-
-                    <div class="normal-txt">
-                        Developed a Java-based system for contact management, offering features like adding, searching,
-                        editing,
-                        and deleting contacts. Simplified organization of user information, reducing manual workload.
-                        <br>
-                        <ul>
-                            <li> <b>Tools & technologies used:</b> Java</li>
-                            <li> <b>Achievements/Outputs:</b> treamlined contact management, enhanced search and editing
-                                capabilities, user-friendly
-                                interface</li>
-                        </ul>
-                        <div class="project-link"><b>Link:</b> <a
-                                href="https://github.com/AlienWashim/Phonebook-Project-Using-java" target="_blank">https://github.com/AlienWashim/Phonebook-Project-Using-java
-                            </a></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-
         </div>
+    </main>
 
-
-
-        <footer>
-            <div class="footer" id="footer">
-
-                <div class="ft-item11 footer-hov">
-
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Contact Information</i>
-                    </div>
-
-                    <div class="social-item footer-content2">
-                        <a href="mailto:ws.akram330@gmail.com">ws.akram330@gmail.com</a>
-                        <a href="tel:+01737861695">+8801737861695 (Whatsapp)</a>
-                        <a href="tel:+01521520330">+8801521520330 (Secondary)</a>
-                    </div>
-
-                </div>
-
-                <div class="ft-item11 footer-hov">
-
-                    <div class="footer-title">
-                        <i class="fas fa-globe"> Website</i>
-                    </div>
-
-                    <div class="social-item footer-content2">
-                        <a href="https://github.com/AlienWashim" target="_blank"><i class="fab fa-github"></i> AlienWashim</a>
-                        <a href="https://www.youtube.com/@AlienWashim" target="_blank"><i class="fab fa-youtube"></i> Washim Akram</a>
-                    </div>
-
-                </div>
-
-
-                <div class="ft-item11 footer-hov">
-
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Social Media</i>
-                    </div>
-
-                    <div class="social-item footer-content2">
-                        <a href="https://www.facebook.com/AlienWashim" target="_blank"><i class="fab fa-facebook"></i>AlienWashim</a>
-                        <a href="https://www.twitter.com/AlienWashim" target="_blank"><i class="fab fa-twitter"></i>AlienWashim</a>
-                        <a href="https://www.instagram.com/AlienWashim" target="_blank"><i class="fab fa-instagram"></i>AlienWashim</a>
-                        <!-- Add more social media icons as needed -->
-                    </div>
-
-                </div>
-
-            </div>
-        </footer>
+    <!-- Global Image Modal Viewer -->
+    <div id="imageModal" class="modal-viewer" role="dialog" aria-modal="true">
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" id="modalClose" aria-label="Close image viewer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="modalImage" class="modal-img" src="" alt="Preview image">
+        </div>
     </div>
+
+    <!-- Reusable Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Md Washim Akram" class="nav-brand-avatar">
+            </div>
+          </div>
+          <div class="nav-brand-text">
+                            <span class="nav-brand-name">Washim Akram</span>
+                            <span class="nav-brand-role">Software Developer</span>
+                        </div>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Jr. Software Developer at <strong>AkijBashir Group</strong>. Experienced .NET &amp; Full Stack Developer specializing in ASP.NET Core Web API, Angular, SQL Server, and enterprise scalable solutions.
+                    </p>
+                    <div class="hero-socials">
+                        <a href="https://github.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alienwashim/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:ws.akram330@gmail.com" class="social-link" title="Email" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Home</a>
+                        <a href="experience.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Experience</a>
+                        <a href="education.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Education</a>
+                        <a href="project.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Projects</a>
+                        <a href="research.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Research</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Portfolio</h4>
+                    <div class="footer-links">
+                        <a href="award.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Awards &amp; Honors</a>
+                        <a href="course.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Certifications</a>
+                        <a href="activity.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Extra-curricular</a>
+                        <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-solid fa-file-arrow-down"></i> View Resume</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Get in Touch</h4>
+                    <div class="footer-links">
+                        <a href="mailto:ws.akram330@gmail.com" class="footer-link">
+                            <i class="fa-solid fa-envelope text-cyan"></i> ws.akram330@gmail.com
+                        </a>
+                        <a href="tel:+8801737861695" class="footer-link">
+                            <i class="fa-brands fa-whatsapp text-emerald"></i> +8801737861695
+                        </a>
+                        <a href="tel:+8801521520330" class="footer-link">
+                            <i class="fa-solid fa-phone text-blue"></i> +8801521520330
+                        </a>
+                        <span class="footer-link text-muted">
+                            <i class="fa-solid fa-location-dot"></i> Banani &amp; Mirpur, Dhaka
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 <strong>Md. Washim Akram</strong> (AlienWashim). All rights reserved.
+                </div>
+                <div>
+                    Built with Modern Web Standards, .NET &amp; Clean Architecture.
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
-
-<script>
-    // Ensure the image viewer is hidden on page load
-    window.onload = function () {
-        const imageViewer = document.getElementById("imageViewer");
-        if (imageViewer) {
-            imageViewer.style.display = "none";
-        }
-    };
-    
-    // Function to open the image viewer
-    function openImageViewer(imageSrc) {
-        const imageViewer = document.getElementById("imageViewer");
-        const fullImage = document.getElementById("fullImage");
-
-        // Set the image source and display the modal
-        fullImage.src = imageSrc;
-        imageViewer.style.display = "flex";
-    }
-
-    // Function to close the image viewer
-    function closeImageViewer() {
-        const imageViewer = document.getElementById("imageViewer");
-
-        // Hide the modal
-        imageViewer.style.display = "none";
-    }
-
-    
-
-
-    function showVideo(videoUrl) {
-        const videoModal = document.getElementById("videoModal");
-        const videoFrame = document.getElementById("videoFrame");
-        
-        // Set the iframe source and show the modal
-        videoFrame.src = videoUrl;
-        videoModal.style.display = "flex";
-    }
-
-    function closeVideo() {
-        const videoModal = document.getElementById("videoModal");
-        const videoFrame = document.getElementById("videoFrame");
-        
-        // Clear the iframe source and hide the modal
-        videoFrame.src = "";
-        videoModal.style.display = "none";
-    }
-</script>

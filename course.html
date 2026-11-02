@@ -1,276 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washim Akram</title>
+    <title>Courses &amp; Certifications | Md. Washim Akram</title>
+    <meta name="description" content="Technical courses, problem-solving certifications, and skills training completed by Md. Washim Akram (HackerRank, iNeuron, IBM, IEEE).">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/test.css">
     <link rel="icon" type="image/x-icon" href="img/icon.jpg">
-    <script src="js/style.js"></script>
+
+    <!-- Script -->
+    <script src="js/style.js" defer></script>
 </head>
 
 <body>
-    <div class="main_container">
+    <!-- Top Progress Bar -->
+    <div id="page-progress-bar"></div>
 
-        <div class="header" id="head">
-
-            <div class="menu-icon" id="menu-icon">
-                <i class="fas fa-bars"></i> <!-- Font Awesome menu icon -->
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Washim Akram" class="nav-brand-avatar">
             </div>
-
-            <div class="navbar" id="navbar">
-                <div class="nevi1">
-                    <div class="item1"><a href="index.html#about-me"><i class="fa-solid fa-face-grin-hearts"> About Me</i></a></div>
-                    <div class="item1"><a href="files/Md Washim Akram_CV.pdf" download="Your_CV_Name.pdf"><i class=" fa-solid fa-graduation-cap"> My CV</i></a></div>
-                    <div class="item1"><a href="#footer"><i class="fa-solid fa-address-book"> Contact</i></a></div>
+          </div>
+          <div class="nav-brand-text">
+                    <span class="nav-brand-name">Washim Akram</span>
+                    <span class="nav-brand-role">Software Developer</span>
                 </div>
-        
-                <div class="nevi2">
-                    <div class="item2"><a href="education.html">Education</a></div>
-                    <div class="item2"><a href="experience.html">Experiences</a></div>
-                    <div class="item2"><a href="research.html">Research Experience</a></div>
-                    <div class="item2"><a href="project.html">Projects</a></div>
-                    <div class="item2"><a href="course.html">Courses</a></div>
-                    <div class="item2"><a href="award.html">Award and Certification</a></div>
-                    <div class="item2"><a href="activity.html">Extra-curricular Activities</a></div>
-                </div>
-                
-            </div>
-        </div> 
+            </a>
 
-        <!-- Image Viewer Modal -->
-        <div id="imageViewer" class="image-viewer">
-            <span class="close-button" onclick="closeImageViewer()">×</span>
-            <img id="fullImage" src="" alt="Full View">
+            <nav class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="project.html" class="nav-link">Projects</a>
+                    <a href="research.html" class="nav-link">Research</a>
+                    <a href="award.html" class="nav-link">Awards</a>
+                    <a href="course.html" class="nav-link active">Courses</a>
+                    <a href="activity.html" class="nav-link">Activities</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                    <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                        <i class="fa-solid fa-file-arrow-down"></i> Resume
+                    </a>
+                </div>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
-        
+    </header>
 
-        <div class="e-content" id="edu-start">
-            
-            <div class="edu">
-                <div class="edu-info">
-                    <h2><b>Problem Solving (Intermediate) Certificate</b></h2>
-
-                    <div class="normal-txt">
-                        It covers topics of Data Structures (such as HashMaps, Stacks and Queues) and Algorithms (such as Optimal Solutions). <br> <br>
-                        <b>Authorized by: </b> Hackerrank
-                        <br>
-                        <b>Credential:</b> <a href="https://www.hackerrank.com/certificates/32263e8ff93a" target="_blank">https://www.hackerrank.com/certificates/32263e8ff93a</a>
-                    </div>
-
-                </div>
-
-                <div class="course-logo">
-                    <a href="https://www.hackerrank.com/certificates/32263e8ff93a" target="_blank"><img src="img/problem_solving_intermediate certificate.png" alt="Problem Solving (Intermediate) Certificate" id="w34"></a>
-                </div>
-
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-certificate"></i> Verified Skills</span>
+                <h1 class="section-title">Courses &amp; Certifications</h1>
+                <p class="section-subtitle">Verified proficiency in problem solving, algorithms, enterprise .NET, databases, and data science.</p>
             </div>
 
-
-            <div class="horizontal-line"></div>
-
-            <div class="edu">
-                <div class="edu-info">
-                    <h2><b>Problem Solving (Basic) Certificate</b></h2>
-
-                    <div class="normal-txt">
-                        It covers basic topics of Data Structures (such as Arrays, Strings) and Algorithms (such as Sorting and Searching). <br> <br>
-                        <b>Authorized by: </b> Hackerrank
-                        <br>
-                        <b>Credential:</b> <a href="https://www.hackerrank.com/certificates/83c93aa1d3b0" target="_blank">https://www.hackerrank.com/certificates/83c93aa1d3b0</a>
-                    </div>
-
+            <!-- Problem Solving & Competitive Programming Stats -->
+            <div class="stats-grid" style="margin-bottom: 3.5rem;">
+                <div class="stat-card">
+                    <span class="stat-number">1290</span>
+                    <span class="stat-label">CodeChef Contest Rating</span>
                 </div>
-
-                <div class="course-logo">
-                    <a href="https://www.hackerrank.com/certificates/83c93aa1d3b0" target="_blank"><img src="img/problem_solving_basic certificate.png" alt="Problem Solving (Basic) Certificate" id="w34"></a>
+                <div class="stat-card">
+                    <span class="stat-number">Intermediate</span>
+                    <span class="stat-label">HackerRank Problem Solving</span>
                 </div>
-
+                <div class="stat-card">
+                    <span class="stat-number">72+</span>
+                    <span class="stat-label">BeeCrowd Problems Solved</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">C# &amp; SQL</span>
+                    <span class="stat-label">HackerRank Certified</span>
+                </div>
             </div>
 
-
-            <div class="horizontal-line"></div>
-
-            <div class="edu">
-                <div class="edu-info">
-                    <h2><b>C# (Basic) Certificate</b></h2>
-
-                    <div class="normal-txt">
-                        This competency area includes understanding the structure of C# programs, types, and Variables, basic OOP, Properties and Indexers, Collections, Exception handling, among others. <br> <br>
-                        <b>Authorized by: </b> Hackerrank
-                        <br>
-                        <b>Credential:</b> <a href="https://www.hackerrank.com/certificates/63550a249a5b" target="_blank">https://www.hackerrank.com/certificates/63550a249a5b</a>
+            <!-- Certificates Grid -->
+            <div class="card-grid">
+                <!-- 1. Problem Solving Intermediate -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('img/problem_solving_intermediate certificate.png')">
+                        <img src="img/problem_solving_intermediate certificate.png" alt="Problem Solving Intermediate Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
                     </div>
-
-                </div>
-
-                <div class="course-logo">
-                    <a href="https://www.hackerrank.com/certificates/63550a249a5b" target="_blank"><img src="img/c_sharp_basic certificate.png" alt="C# (Basic) Certificate" id="w34"></a>
-                </div>
-
-            </div>
-
-
-            <div class="horizontal-line"></div>
-
-
-            <div class="edu">
-                <div class="edu-info">
-                    <h2><b>Data Structure and Algorithm Foundation</b></h2>
-
-                    <div class="normal-txt">
-                        Completed iNeuron’s Data Structures and Algorithms course, which served
-                    as a comprehensive review and enhancement of my foundational knowledge
-                    in this pivotal area of study. <br> <br>
-                        <b>Authorized by: </b> iNeuron.ai
-                        <br>
-                        <b>Credential:</b> <a href="https://learn.ineuron.ai/certificate/913fe3a9-9f5a-400a-8066-4b0fc5651417" target="_blank">https://learn.ineuron.ai/certificate/913fe3a9-9f5a-400a-8066-4b0fc5651417</a>
+                    <div class="cert-body">
+                        <span class="badge badge-emerald" style="align-self: flex-start; margin-bottom: 0.5rem;">Verified Credential</span>
+                        <h2 class="cert-title">Problem Solving (Intermediate)</h2>
+                        <span class="cert-issuer"><i class="fa-brands fa-hackerrank text-emerald"></i> HackerRank</span>
+                        <p class="cert-desc">
+                            Covers advanced data structures (Trees, Graphs, Hash Maps), dynamic programming, greedy algorithms, and complex edge-case management.
+                        </p>
                     </div>
-
                 </div>
 
-                <div class="course-logo">
-                    <a href="https://learn.ineuron.ai/certificate/913fe3a9-9f5a-400a-8066-4b0fc5651417" target="_blank"><img src="img/Data Structure and Algorithm from iNeuron.ai.jpg" alt="Data Structure and Algorithm Foundation" id="w34"></a>
-                </div>
-
-            </div>
-
-
-            <div class="horizontal-line"></div>
-
-            
-            <div class="edu">
-                <div class="edu-info">
-                    <h2><b>SQL (Basic) Certificate</b></h2>
-
-                    <div class="normal-txt">
-                        Certified in SQL (Basic) with a demonstrated proficiency in Structured
-Query Language. Possessing a robust foundation, poised to effectively tackle
-data challenges and optimize data-driven decision-making processes. <br> <br>
-                        <b>Authorized by: </b> HackerRank
-                        <br>
-                        <b>Credential:</b> <a href="https://courses.cognitiveclass.ai/certificates/3b1de21d8a8340a28f6a9af5aff7fd9a" target="_blank">https://courses.cognitiveclass.ai/certificates/3b1de21d8a8340a28f6a9af5aff7fd9a</a>
+                <!-- 2. Problem Solving Basic -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('img/problem_solving_basic certificate.png')">
+                        <img src="img/problem_solving_basic certificate.png" alt="Problem Solving Basic Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
                     </div>
-
-                </div>
-
-                <div class="course-logo">
-                    <a href="https://courses.cognitiveclass.ai/certificates/3b1de21d8a8340a28f6a9af5aff7fd9a" target="_blank"><img src="img/sql_basic certificate.png" alt="SQL (Basic) Certificate"></a>
-                </div>
-
-            </div>
-
-
-            <div class="horizontal-line"></div>
-            
-            <div class="edu">
-                <div class="edu-info">
-                    <h2><b>Python 101 for Data Science</b></h2>
-
-                    <div class="normal-txt">
-                        Completed the Python 101 for Data Science course, gaining vital expertise
-in Python programming tailored for data science applications. Excited to
-utilize these newfound skills to tackle real-world data problems and con-
-tribute effectively to current and future projects. <br> <br>
-                        <b>Authorized by: </b> COGNITIVECLASS.ai
-                        <br>
-                        <b>Credential:</b> <a href="https://courses.cognitiveclass.ai/certificates/3b1de21d8a8340a28f6a9af5aff7fd9a" target="_blank">https://courses.cognitiveclass.ai/certificates/3b1de21d8a8340a28f6a9af5aff7fd9a</a>
+                    <div class="cert-body">
+                        <span class="badge badge-emerald" style="align-self: flex-start; margin-bottom: 0.5rem;">Verified Credential</span>
+                        <h2 class="cert-title">Problem Solving (Basic)</h2>
+                        <span class="cert-issuer"><i class="fa-brands fa-hackerrank text-emerald"></i> HackerRank</span>
+                        <p class="cert-desc">
+                            Validates fundamental algorithmic intuition, time-space complexity optimization, arrays, strings, and sorting logic.
+                        </p>
                     </div>
-
                 </div>
 
-                <div class="course-logo">
-                    <a href="https://courses.cognitiveclass.ai/certificates/3b1de21d8a8340a28f6a9af5aff7fd9a" target="_blank"><img src="img/Python 101 for Data Science.jpg" alt="Python 101 for Data Science" ></a>
+                <!-- 3. C# (Basic) -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('img/c_sharp_basic certificate.png')">
+                        <img src="img/c_sharp_basic certificate.png" alt="C# Basic Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: 0.5rem;">Language Credential</span>
+                        <h2 class="cert-title">C# (Basic) Certification</h2>
+                        <span class="cert-issuer"><i class="fa-brands fa-hackerrank text-emerald"></i> HackerRank</span>
+                        <p class="cert-desc">
+                            Demonstrates mastery of C# syntax, object-oriented principles, inheritance, delegates, LINQ operations, and memory management.
+                        </p>
+                    </div>
                 </div>
 
+                <!-- 4. SQL (Basic) -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('img/sql_basic certificate.png')">
+                        <img src="img/sql_basic certificate.png" alt="SQL Basic Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-cyan" style="align-self: flex-start; margin-bottom: 0.5rem;">Database Credential</span>
+                        <h2 class="cert-title">SQL (Basic) Certification</h2>
+                        <span class="cert-issuer"><i class="fa-brands fa-hackerrank text-emerald"></i> HackerRank</span>
+                        <p class="cert-desc">
+                            Covers relational querying, filtering, multi-table joins, subqueries, aggregations, grouping, and indexing fundamentals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 5. iNeuron Data Structures & Algorithms -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('img/Data Structure and Algorithm from iNeuron.ai.jpg')">
+                        <img src="img/Data Structure and Algorithm from iNeuron.ai.jpg" alt="Data Structure and Algorithm from iNeuron.ai">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: 0.5rem;">Professional Training</span>
+                        <h2 class="cert-title">Data Structures &amp; Algorithms Foundation</h2>
+                        <span class="cert-issuer">iNeuron.ai</span>
+                        <p class="cert-desc">
+                            In-depth practical coursework covering asymptotic analysis, recursion, binary search trees, graph traversals, and dynamic programming.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 6. Python 101 for Data Science -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('img/Python 101 for Data Science.jpg')">
+                        <img src="img/Python 101 for Data Science.jpg" alt="Python 101 for Data Science Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-cyan" style="align-self: flex-start; margin-bottom: 0.5rem;">Data Science</span>
+                        <h2 class="cert-title">Python 101 for Data Science</h2>
+                        <span class="cert-issuer">IBM / Cognitive Class</span>
+                        <p class="cert-desc">
+                            Core Python programming for data manipulation, numerical analysis with NumPy, data structures with Pandas, and data visualization.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 7. Careers in Automation Webinar -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('files/Webinar_Exploring the Terrain Unveiling Careers in Automation.jpg')">
+                        <img src="files/Webinar_Exploring the Terrain Unveiling Careers in Automation.jpg" alt="Careers in Automation Webinar Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-emerald" style="align-self: flex-start; margin-bottom: 0.5rem;">Industry Workshop</span>
+                        <h2 class="cert-title">Unveiling Careers in Automation</h2>
+                        <span class="cert-issuer">IEEE Student Branch</span>
+                        <p class="cert-desc">
+                            Explored the evolution of industrial robotics, modern PLC/SCADA integration, automation frameworks, and career pathways in smart manufacturing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 8. Worldwide Successful Engineers Webinar -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('files/Webinar_IEEE A Gateway for Worldwide Successful Engineers.jpg')">
+                        <img src="files/Webinar_IEEE A Gateway for Worldwide Successful Engineers.jpg" alt="IEEE A Gateway for Worldwide Successful Engineers Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: 0.5rem;">Global Engineering</span>
+                        <h2 class="cert-title">IEEE: Gateway for Worldwide Successful Engineers</h2>
+                        <span class="cert-issuer">IEEE Global Chapter</span>
+                        <p class="cert-desc">
+                            Professional networking insights, international technical research publishing standards, and ethics in modern software systems.
+                        </p>
+                    </div>
+                </div>
             </div>
-
         </div>
+    </main>
 
-
-
-        <footer>
-            <div class="footer" id="footer" >
-    
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Contact Information</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                       <a href="mailto:ws.akram330@gmail.com">ws.akram330@gmail.com</a>
-                      <a href="tel:+01737861695">+8801737861695 (Whatsapp)</a>
-                       <a href="tel:+01521520330">+8801521520330 (Secondary)</a> 
-                    </div>
-        
-                </div>
-        
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-globe"> Website</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                        <a href="https://github.com/AlienWashim" target="_blank"><i class="fab fa-github"></i> AlienWashim</a>
-                        <a href="https://www.youtube.com/@AlienWashim" target="_blank"><i class="fab fa-youtube"></i> Washim Akram</a>
-                    </div>
-                    
-                </div>
-                  
-        
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Social Media</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                        <a href="https://www.facebook.com/AlienWashim" target="_blank"><i class="fab fa-facebook"></i>AlienWashim</a>
-                        <a href="https://www.twitter.com/AlienWashim" target="_blank"><i class="fab fa-twitter"></i>AlienWashim</a>
-                        <a href="https://www.instagram.com/AlienWashim" target="_blank"><i class="fab fa-instagram"></i>AlienWashim</a>
-                    </div>
-        
-                </div>
-        
-            </div>
-        </footer>
+    <!-- Global Image Modal Viewer -->
+    <div id="imageModal" class="modal-viewer" role="dialog" aria-modal="true">
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" id="modalClose" aria-label="Close image viewer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="modalImage" class="modal-img" src="" alt="Preview image">
+        </div>
     </div>
+
+    <!-- Reusable Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Washim Akram" class="nav-brand-avatar">
+            </div>
+          </div>
+          <div class="nav-brand-text">
+                            <span class="nav-brand-name">Washim Akram</span>
+                            <span class="nav-brand-role">Software Developer</span>
+                        </div>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Junior Software Developer at <strong>AkijBashir Group</strong>. Specializing in high-performance web applications with ASP.NET Core, Blazor, C#, SQL Server, and modern full-stack architectures.
+                    </p>
+                    <div class="hero-socials">
+                        <a href="https://github.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/AlienWashim/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:ws.akram330@gmail.com" class="social-link" title="Email" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Home</a>
+                        <a href="experience.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Experience</a>
+                        <a href="education.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Education</a>
+                        <a href="project.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Projects</a>
+                        <a href="research.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Research</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Portfolio</h4>
+                    <div class="footer-links">
+                        <a href="award.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Awards &amp; Honors</a>
+                        <a href="course.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Certifications</a>
+                        <a href="activity.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Extra-curricular</a>
+                        <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-solid fa-file-arrow-down"></i> View Resume</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Get in Touch</h4>
+                    <div class="footer-links">
+                        <a href="mailto:ws.akram330@gmail.com" class="footer-link">
+                            <i class="fa-solid fa-envelope text-cyan"></i> ws.akram330@gmail.com
+                        </a>
+                        <a href="tel:+8801737861695" class="footer-link">
+                            <i class="fa-brands fa-whatsapp text-emerald"></i> +8801737861695
+                        </a>
+                        <a href="tel:+8801521520330" class="footer-link">
+                            <i class="fa-solid fa-phone text-blue"></i> +8801521520330
+                        </a>
+                        <span class="footer-link text-muted">
+                            <i class="fa-solid fa-location-dot"></i> Kazipara, Mirpur 10, Dhaka
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 <strong>Md. Washim Akram</strong> (AlienWashim). All rights reserved.
+                </div>
+                <div>
+                    Designed &amp; Developed with Modern Web Standards.
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
-
-
-<script>
-    // Ensure the image viewer is hidden on page load
-    window.onload = function () {
-        const imageViewer = document.getElementById("imageViewer");
-        if (imageViewer) {
-            imageViewer.style.display = "none";
-        }
-    };
-    
-    // Function to open the image viewer
-    function openImageViewer(imageSrc) {
-        const imageViewer = document.getElementById("imageViewer");
-        const fullImage = document.getElementById("fullImage");
-
-        // Set the image source and display the modal
-        fullImage.src = imageSrc;
-        imageViewer.style.display = "flex";
-    }
-
-    // Function to close the image viewer
-    function closeImageViewer() {
-        const imageViewer = document.getElementById("imageViewer");
-
-        // Hide the modal
-        imageViewer.style.display = "none";
-    }
-</script>

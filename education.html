@@ -1,170 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washim Akram</title>
+    <title>Academic Background | Md. Washim Akram</title>
+    <meta name="description" content="Education history of Md. Washim Akram - B.Sc. in Computer Science and Engineering from Green University of Bangladesh (CGPA 3.91/4.00), HSC, SSC.">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/test.css">
     <link rel="icon" type="image/x-icon" href="img/icon.jpg">
-    <script src="js/style.js"></script>
+
+    <!-- Script -->
+    <script src="js/style.js" defer></script>
 </head>
 
 <body>
-    <div class="main_container">
+    <!-- Top Progress Bar -->
+    <div id="page-progress-bar"></div>
 
-        <div class="header" id="head">
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Washim Akram" class="nav-brand-avatar">
+            </div>
+          </div>
+          <div class="nav-brand-text">
+                    <span class="nav-brand-name">Washim Akram</span>
+                    <span class="nav-brand-role">Software Developer</span>
+                </div>
+            </a>
 
-            <div class="menu-icon" id="menu-icon">
-                <i class="fas fa-bars"></i> <!-- Font Awesome menu icon -->
+            <nav class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="education.html" class="nav-link active">Education</a>
+                    <a href="project.html" class="nav-link">Projects</a>
+                    <a href="research.html" class="nav-link">Research</a>
+                    <a href="award.html" class="nav-link">Awards</a>
+                    <a href="course.html" class="nav-link">Courses</a>
+                    <a href="activity.html" class="nav-link">Activities</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                    <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                        <i class="fa-solid fa-file-arrow-down"></i> Resume
+                    </a>
+                </div>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</span>
+                <h1 class="section-title">Educational Background</h1>
+                <p class="section-subtitle">A foundation rooted in rigorous computer science principles, continuous distinction, and academic honors.</p>
             </div>
 
-            <div class="navbar" id="navbar">
-                <div class="nevi1">
-                    <div class="item1"><a href="index.html#about-me"><i class="fa-solid fa-face-grin-hearts"> About Me</i></a></div>
-                    <div class="item1"><a href="files/Md Washim Akram_CV.pdf" download="Your_CV_Name.pdf"><i class=" fa-solid fa-graduation-cap"> My CV</i></a></div>
-                    <div class="item1"><a href="#footer"><i class="fa-solid fa-address-book"> Contact</i></a></div>
-                </div>
-        
-                <div class="nevi2">
-                    <div class="item2"><a href="education.html">Education</a></div>
-                    <div class="item2"><a href="experience.html">Experiences</a></div>
-                    <div class="item2"><a href="research.html">Research Experience</a></div>
-                    <div class="item2"><a href="project.html">Projects</a></div>
-                    <div class="item2"><a href="course.html">Courses</a></div>
-                    <div class="item2"><a href="index.html">Award and Certification</a></div>
-                    <div class="item2"><a href="activity.html">Extra-curricular Activities</a></div>
-                </div>
-                
-            </div>
-        </div> 
-        
+            <!-- Education Timeline -->
+            <div class="timeline">
+                <!-- 1. BSc in CSE -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-header-main">
+                                <h2 class="role-title">Bachelor of Science in Computer Science and Engineering (CSE)</h2>
+                                <div class="company-name">
+                                    <img src="img/gub.png" alt="Green University of Bangladesh" class="company-logo-header">
+                                    <a href="https://green.edu.bd/" target="_blank" rel="noopener noreferrer">
+                                        Green University of Bangladesh
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="timeline-header-meta">
+                                <span class="badge badge-emerald"><i class="fa-solid fa-calendar-days"></i> 2020 – 2024</span>
+                            </div>
+                        </div>
 
-        <div class="e-content" id="edu-start">
-            
-            <div class="edu">
-                <div class="edu-info">
-                    <h2><b>BSc. in Computer Science and Engineering (CSE)</b></h2>
+                        <div class="timeline-body">
+                            <div class="academic-badge-row">
+                                <span class="badge badge-cgpa">
+                                    <i class="fa-solid fa-graduation-cap"></i> CGPA: 3.91 out of 4.00
+                                </span>
+                                <span class="badge badge-honors">
+                                    <i class="fa-solid fa-medal"></i> 7x Vice Chancellor's Award &amp; 1x Dean's Award
+                                </span>
+                            </div>
 
-                    <div class="normal-txt">
-                        <a href="https://green.edu.bd/" target="_blank">Green University of Bangladesh, Dhaka, Bangladesh</a>
-                        <br>
-                        <b>CGPA:</b> 3.91 out of 4.00
-                        <br>
-                        <b>Time Period:</b> July, 2020 - August, 2024
-                        <br>
-                        <b>Thesis Title:</b> Enhancing the Tree-based Keyphrase Extarction Technique Using Embedding Technique.
-                        <br>
-                        <b>Thesis Supervisor:</b> Prof. Dr. Md. Saiful Azad, Dean of FSE, Green University of Bangladesh
+                            <p>
+                                <strong>Department:</strong> Department of Computer Science and Engineering (CSE)<br>
+                                <strong>Campus:</strong> Purbachal American City, Dhaka, Bangladesh<br>
+                                <strong>Graduation Thesis:</strong> <em>"Enhancing the Tree-based Keyphrase Extraction Technique Using Embedding Technique"</em><br>
+                                <strong>Thesis Supervisor:</strong> Prof. Dr. Md. Saiful Azad (Dean, Faculty of Science &amp; Engineering)
+                            </p>
+
+                            <p style="margin-top: 0.75rem;">
+                                <strong>Core Coursework:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems, 
+                                Software Engineering, Operating Systems, Computer Networks, Machine Learning, Natural Language Processing, Compiler Design, Distributed Systems.
+                            </p>
+
+                            <div class="tech-tags" style="margin-top: 1.25rem;">
+                                <span class="tech-tag">Computer Science</span>
+                                <span class="tech-tag">NLP Thesis</span>
+                                <span class="tech-tag">Algorithms</span>
+                                <span class="tech-tag">OOP &amp; System Design</span>
+                                <span class="tech-tag">Academic Excellence</span>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
-                <div class="edu-logo">
-                    <a href="https://green.edu.bd/" target="_blank"><img src="img/gub.png" alt="My University" id="w34"></a>
-                </div>
-            </div>
+                <!-- 2. HSC -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-header-main">
+                                <h2 class="role-title">Higher Secondary Certificate (H.S.C.)</h2>
+                                <div class="company-name">
+                                    <img src="img/rajbari-govt-clg.png" alt="Rajbari Govt. College" class="company-logo-header">
+                                    <a href="https://rajbarigovtcollege.edu.bd/" target="_blank" rel="noopener noreferrer">
+                                        Rajbari Govt. College, Rajbari
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="timeline-header-meta">
+                                <span class="badge badge-blue"><i class="fa-solid fa-calendar-days"></i> 2017 – 2018</span>
+                            </div>
+                        </div>
 
-            <div class="horizontal-line"></div>
+                        <div class="timeline-body">
+                            <div class="academic-badge-row">
+                                <span class="badge badge-cgpa">
+                                    <i class="fa-solid fa-award"></i> GPA: 3.92 out of 5.00
+                                </span>
+                                <span class="badge badge-blue">
+                                    <i class="fa-solid fa-flask"></i> Science Group
+                                </span>
+                            </div>
 
-            <div class="edu">
-                <div class="edu-info">
-                    <h2><b>Higher Secondary Certificate (H.S.C.)</b></h2>
+                            <p>
+                                <strong>Discipline:</strong> Science<br>
+                                <strong>Education Board:</strong> Dhaka Board<br>
+                                <strong>Subjects:</strong> Physics, Chemistry, Higher Mathematics, Biology, Information &amp; Communication Technology (ICT), English, Bengali.
+                            </p>
 
-                    <div class="normal-txt">
-                        <b>College: </b><a href="https://www.rajbarigovtcollege.edu.bd/" target="_blank">Rajbari Govt. College, Rajbari</a>
-                        <br>
-                        <b>Group:</b> Science
-                        <br>
-                        <b>Board:</b> Dhaka
-                        <br>
-                        <b>GPA:</b> 3.92 out of 5.00
+                            <div class="tech-tags" style="margin-top: 1.25rem;">
+                                <span class="tech-tag">Science &amp; Mathematics</span>
+                                <span class="tech-tag">Higher Math</span>
+                                <span class="tech-tag">ICT</span>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
-                <div class="edu-logo">
-                    <a href="https://rajbarigovtcollege.edu.bd/" target="_blank"><img src="img/rajbari-govt-clg.png" alt="My College" id="w34"></a>
-                </div>
-            </div>
+                <!-- 3. SSC -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-header-main">
+                                <h2 class="role-title">Secondary School Certificate (S.S.C.)</h2>
+                                <div class="company-name">
+                                    <img src="img/yakub.png" alt="Yakub Ahmed Secondary School" class="company-logo-header">
+                                    <span>Yakub Ahmed Secondary School, Khoksa, Kushtia</span>
+                                </div>
+                            </div>
+                            <div class="timeline-header-meta">
+                                <span class="badge badge-emerald"><i class="fa-solid fa-calendar-days"></i> 2014 – 2015</span>
+                            </div>
+                        </div>
 
-            <div class="horizontal-line"></div>
+                        <div class="timeline-body">
+                            <div class="academic-badge-row">
+                                <span class="badge badge-cgpa">
+                                    <i class="fa-solid fa-star"></i> GPA: 5.00 out of 5.00 (Golden A+)
+                                </span>
+                                <span class="badge badge-blue">
+                                    <i class="fa-solid fa-flask"></i> Science Group
+                                </span>
+                            </div>
 
-            <div class="edu">
-                <div class="edu-info">
-                    <h2><b>Secondary School Certificate (S.S.C.)</b></h2>
+                            <p>
+                                <strong>Discipline:</strong> Science<br>
+                                <strong>Education Board:</strong> Jessore Board<br>
+                                <strong>Focus:</strong> Mathematics, General Science, Physics, Chemistry, Computer Studies.
+                            </p>
 
-                    <div class="normal-txt">
-                        <b>School: </b><a href="https://yakubahmedsecondaryschool.jessoreboard.gov.bd/" target="_blank">Yakub Ahmed Secondary School, Khoksa, Kushtia, Jessore, EIIN - 117632</a>
-                        <br>
-                        <b>Group:</b> Science
-                        <br>
-                        <b>Board:</b> Jessore
-                        <br>
-                        <b>GPA:</b> 5.00 out of 5.00
+                            <div class="tech-tags" style="margin-top: 1.25rem;">
+                                <span class="tech-tag">Science</span>
+                                <span class="tech-tag">Perfect GPA 5.00</span>
+                                <span class="tech-tag">Jessore Board</span>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-
-                <div class="edu-logo">
-                    <a href="https://rajbarigovtcollege.edu.bd/" target="_blank"><img src="img/yakub.png" alt="My College" id="w34"></a>
                 </div>
             </div>
+        </div>
+    </main>
 
+    <!-- Global Image Modal Viewer -->
+    <div id="imageModal" class="modal-viewer" role="dialog" aria-modal="true">
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" id="modalClose" aria-label="Close image viewer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="modalImage" class="modal-img" src="" alt="Preview image">
         </div>
     </div>
 
-    <footer>
-        <div class="footer" id="footer" >
+    <!-- Reusable Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Washim Akram" class="nav-brand-avatar">
+            </div>
+          </div>
+          <div class="nav-brand-text">
+                            <span class="nav-brand-name">Washim Akram</span>
+                            <span class="nav-brand-role">Software Developer</span>
+                        </div>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Junior Software Developer at <strong>AkijBashir Group</strong>. Specializing in high-performance web applications with ASP.NET Core, Blazor, C#, SQL Server, and modern full-stack architectures.
+                    </p>
+                    <div class="hero-socials">
+                        <a href="https://github.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/AlienWashim/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:ws.akram330@gmail.com" class="social-link" title="Email" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
 
-            <div class="ft-item11 footer-hov">
-    
-                <div class="footer-title">
-                    <i class="fas fa-address-book"> Contact Information</i>
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Home</a>
+                        <a href="experience.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Experience</a>
+                        <a href="education.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Education</a>
+                        <a href="project.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Projects</a>
+                        <a href="research.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Research</a>
+                    </div>
                 </div>
-    
-                <div class="social-item footer-content2">
-                   <a href="mailto:ws.akram330@gmail.com">ws.akram330@gmail.com</a>
-                  <a href="tel:+01737861695">+8801737861695 (Whatsapp)</a>
-                   <a href="tel:+01521520330">+8801521520330 (Secondary)</a> 
+
+                <div>
+                    <h4 class="footer-heading">Portfolio</h4>
+                    <div class="footer-links">
+                        <a href="award.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Awards &amp; Honors</a>
+                        <a href="course.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Certifications</a>
+                        <a href="activity.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Extra-curricular</a>
+                        <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-solid fa-file-arrow-down"></i> View Resume</a>
+                    </div>
                 </div>
-    
+
+                <div>
+                    <h4 class="footer-heading">Get in Touch</h4>
+                    <div class="footer-links">
+                        <a href="mailto:ws.akram330@gmail.com" class="footer-link">
+                            <i class="fa-solid fa-envelope text-cyan"></i> ws.akram330@gmail.com
+                        </a>
+                        <a href="tel:+8801737861695" class="footer-link">
+                            <i class="fa-brands fa-whatsapp text-emerald"></i> +8801737861695
+                        </a>
+                        <a href="tel:+8801521520330" class="footer-link">
+                            <i class="fa-solid fa-phone text-blue"></i> +8801521520330
+                        </a>
+                        <span class="footer-link text-muted">
+                            <i class="fa-solid fa-location-dot"></i> Kazipara, Mirpur 10, Dhaka
+                        </span>
+                    </div>
+                </div>
             </div>
-    
-            <div class="ft-item11 footer-hov">
-    
-                <div class="footer-title">
-                    <i class="fas fa-globe"> Website</i>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 <strong>Md. Washim Akram</strong> (AlienWashim). All rights reserved.
                 </div>
-    
-                <div class="social-item footer-content2">
-                    <a href="https://github.com/AlienWashim"><i class="fab fa-github"></i> AlienWashim</a>
-                    <a href="https://www.youtube.com/@AlienWashim" target="_blank"><i class="fab fa-youtube"></i> Washim Akram</a>
+                <div>
+                    Designed &amp; Developed with Modern Web Standards.
                 </div>
-                
             </div>
-              
-    
-            <div class="ft-item11 footer-hov">
-    
-                <div class="footer-title">
-                    <i class="fas fa-address-book"> Social Media</i>
-                </div>
-    
-                <div class="social-item footer-content2">
-                    <a href="https://www.facebook.com/AlienWashim"><i class="fab fa-facebook"></i>AlienWashim</a>
-                    <a href="https://www.twitter.com/AlienWashim"><i class="fab fa-twitter"></i>AlienWashim</a>
-                    <a href="https://www.instagram.com/AlienWashim"><i class="fab fa-instagram"></i>AlienWashim</a>
-                </div>
-    
-            </div>
-    
         </div>
     </footer>
 </body>
-
 </html>

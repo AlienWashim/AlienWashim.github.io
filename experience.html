@@ -1,273 +1,457 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washim Akram</title>
+    <title>Professional Experience | Md Washim Akram</title>
+    <meta name="description" content="Career and professional experience of Md Washim Akram - Jr. Software Developer at AkijBashir Group, formerly Intern at BJIT and Academic Assistant at Green University.">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/test.css">
     <link rel="icon" type="image/x-icon" href="img/icon.jpg">
-    <script src="js/style.js"></script>
+
+    <!-- Script -->
+    <script src="js/style.js" defer></script>
 </head>
 
 <body>
-    <div class="main_container">
+    <!-- Top Progress Bar -->
+    <div id="page-progress-bar"></div>
 
-        <div class="header" id="head">
-
-
-            <div class="menu-icon" id="menu-icon">
-                <i class="fas fa-bars"></i> <!-- Font Awesome menu icon -->
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Md Washim Akram" class="nav-brand-avatar">
             </div>
+          </div>
+          <div class="nav-brand-text">
+                    <span class="nav-brand-name">Washim Akram</span>
+                    <span class="nav-brand-role">Software Developer</span>
+                </div>
+            </a>
 
-            <div class="navbar" id="navbar">
-                <div class="nevi1">
-                    <div class="item1"><a href="index.html#about-me"><i class="fa-solid fa-face-grin-hearts"> About
-                                Me</i></a></div>
-                    <div class="item1"><a href="files/Md Washim Akram_CV.pdf" download="Your_CV_Name.pdf"><i
-                                class=" fa-solid fa-graduation-cap"> My CV</i></a></div>
-                    <div class="item1"><a href="#footer"><i class="fa-solid fa-address-book"> Contact</i></a></div>
+            <nav class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="experience.html" class="nav-link active">Experience</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="project.html" class="nav-link">Projects</a>
+                    <a href="research.html" class="nav-link">Research</a>
+                    <a href="award.html" class="nav-link">Awards</a>
+                    <a href="course.html" class="nav-link">Courses</a>
+                    <a href="activity.html" class="nav-link">Activities</a>
                 </div>
 
-                <div class="nevi2">
-                    <div class="item2"><a href="education.html">Education</a></div>
-                    <div class="item2"><a href="experience.html">Experiences</a></div>
-                    <div class="item2"><a href="research.html">Research Experience</a></div>
-                    <div class="item2"><a href="project.html">Projects</a></div>
-                    <div class="item2"><a href="course.html">Courses</a></div>
-                    <div class="item2"><a href="award.html">Award and Certification</a></div>
-                    <div class="item2"><a href="activity.html">Extra-curricular Activities</a></div>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                    <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                        <i class="fa-solid fa-file-arrow-down"></i> Resume
+                    </a>
                 </div>
+            </nav>
 
-            </div>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
+    </header>
 
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Career Journey</span>
+                <h1 class="section-title">Professional Experience</h1>
+                <p class="section-subtitle">Engineering high-throughput enterprise systems, designing scalable databases, and crafting modern .NET &amp; Angular solutions.</p>
+            </div>
 
-        <div class="exp-content" id="exp-start">
-
-            <div class="exp-title"><button><span>Professional Experience</span></button></div>
-
-            <div class="edu">
-                <div class="exp">
-
-                    <div class="exp-info">
-
-                        <h1><b>Intern-ASP.NET</b></h1>
-                        <div class="normal-txt">
-                            <b><a href="https://bjitgroup.com/">BJIT</a></b>
-                            <br>
-                            Baridhara J Block, Dhaka 1212
-                            <br><br>
-                            <b>Duration:</b> November 2024 - January 2025
-                            <br>
-                            – Developing and maintaining web applications using the ASP.NET framework.
-                            <br>
-                            – Collaborating with cross-functional teams to design, implement, and test application
-                            features.
-                            <br>
-                            – Debugging and resolving technical issues to ensure seamless application performance.
-                            <br>
-                            – Learning and applying industry best practices for clean and efficient code.
-                            <br>
-                            – Gaining hands-on experience in full-stack development with ASP.NET and related
-                            technologies.
+            <!-- Experience Timeline -->
+            <div class="timeline">
+                <!-- 1. AkijBashir Group -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-header-main">
+                                <h2 class="role-title">Jr. Software Developer</h2>
+                                <div class="company-name">
+                                    <a href="https://www.linkedin.com/in/alienwashim/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-solid fa-building"></i> AkijBashir Group
+                                    </a>
+                                    <span style="color: var(--text-muted); font-weight: 500;">· Full-time</span>
+                                </div>
+                            </div>
+                            <div class="timeline-header-meta">
+                                <span class="badge badge-emerald"><i class="fa-solid fa-circle-dot"></i> May 2025 – Present · 1 yr 7 mos</span>
+                                <div class="timeline-period">
+                                    <i class="fa-solid fa-location-dot"></i> Banani, Dhaka-1213 · On-site
+                                </div>
+                            </div>
                         </div>
 
+                        <div class="timeline-body">
+                            <p style="font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1.25rem;">
+                                Designed and optimized databases, developed RESTful APIs, and integrated Angular frontends to deliver scalable enterprise solutions using ASP.NET Core Web API, Angular, MS SQL Server, and .NET technologies.
+                            </p>
 
+                            <!-- Sub-Cards for Major Business Modules -->
+                            <div class="sub-card">
+                                <div class="sub-card-header">
+                                    <span class="sub-card-title"><i class="fa-solid fa-chart-line text-purple"></i> Enterprise Sales Platform “Flow360”</span>
+                                    <span class="badge badge-purple">Sales Software Team</span>
+                                </div>
+                                <ul class="sub-card-list">
+                                    <li>Developed complete <strong>Sales Modules</strong> for <strong>Akij Door</strong> and <strong>Akij Board</strong> as part of the enterprise sales platform Flow360.</li>
+                                    <li>Contributing to Flow360's development, maintenance, and continuous improvement as a member of the Sales Software Development Team, supporting major business units including <strong>Akij Glass Industries</strong>, <strong>Akij Ceramics</strong>, <strong>Akij Bathware</strong>, <strong>Akij Cables</strong>, and <strong>Akij Sanitaryware</strong>.</li>
+                                </ul>
+                            </div>
+
+                            <div class="sub-card">
+                                <div class="sub-card-header">
+                                    <span class="sub-card-title"><i class="fa-solid fa-wine-bottle text-cyan"></i> Akij Glass Industries Ltd.</span>
+                                    <span class="badge badge-cyan">Production &amp; SSRS</span>
+                                </div>
+                                <ul class="sub-card-list">
+                                    <li>Developed and deployed an end-to-end <strong>Production Module</strong> for Akij Glass Industries Ltd. using ASP.NET Core Web API, Angular, MS SQL Server, and SSRS (MS Report Server) for seamless operational workflow integration.</li>
+                                </ul>
+                            </div>
+
+                            <div class="sub-card">
+                                <div class="sub-card-header">
+                                    <span class="sub-card-title"><i class="fa-solid fa-headset text-blue"></i> Group-wide Complaint Management System</span>
+                                    <span class="badge badge-emerald">Live in Production</span>
+                                </div>
+                                <ul class="sub-card-list">
+                                    <li>Built a fully functional Group-wide Complaint Management System using ASP.NET Core Web API and Angular — currently live for Bathware and Sanitaryware units, with a scalable architecture for enterprise-wide rollout.</li>
+                                </ul>
+                            </div>
+
+                            <div class="sub-card">
+                                <div class="sub-card-header">
+                                    <span class="sub-card-title"><i class="fa-solid fa-industry text-emerald"></i> Akij Bathware, Ceramics &amp; Biax Films</span>
+                                    <span class="badge badge-blue">Manufacturing &amp; Automation</span>
+                                </div>
+                                <ul class="sub-card-list">
+                                    <li>Developed a <strong>Production Module</strong> for Akij Bathware Ltd., supporting production automation and operational efficiency.</li>
+                                    <li>Enhanced existing production software and developed new modules for <strong>Akij Ceramics Ltd.</strong> using .NET MVC.</li>
+                                    <li>Upgraded and extended production modules for <strong>Akij Biax Films Ltd.</strong> using Windows Forms desktop applications integrated with real-time machine operations.</li>
+                                </ul>
+                            </div>
+
+                            <div class="sub-card">
+                                <div class="sub-card-header">
+                                    <span class="sub-card-title"><i class="fa-solid fa-truck-fast text-amber"></i> Billing &amp; Accounts Automation Modules</span>
+                                    <span class="badge badge-amber">Finance &amp; Logistics</span>
+                                </div>
+                                <ul class="sub-card-list">
+                                    <li>Developed <strong>Transport Billing Automation Modules</strong> for <strong>Akij Biax Films Ltd.</strong> and <strong>Akij Steel Mills Ltd.</strong>, featuring billing records management, automated calculations, and reporting.</li>
+                                    <li>Developed Accounts-related modules for financial record management and complex SQL-based report generation.</li>
+                                </ul>
+                            </div>
+
+                            <ul style="margin-top: 1.25rem;">
+                                <li><strong>Mobile Workflow Integration:</strong> Collaborated with the mobile application team to develop RESTful APIs for mobile business workflows and field integrations.</li>
+                                <li><strong>Continuous System Support:</strong> Continuously maintain and optimize enterprise software across production, sales, accounts, and operations.</li>
+                                <li><strong>Cross-Functional Collaboration:</strong> Collaborate with clients, management, and cross-functional teams to gather requirements, resolve operational challenges, and deliver effective software solutions.</li>
+                            </ul>
+
+                            <div class="tech-tags" style="margin-top: 1.25rem;">
+                                <span class="tech-tag">ASP.NET Core Web API</span>
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">Flow360</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">MS SQL Server</span>
+                                <span class="tech-tag">SSRS Reports</span>
+                                <span class="tech-tag">.NET MVC</span>
+                                <span class="tech-tag">Windows Forms</span>
+                                <span class="tech-tag">RESTful APIs</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="edu-logo">
-                        <a href="https://bjitgroup.com/"><img src="img/bjit-logo2.svg" alt="BJIT" id="w34"></a>
-                    </div>
-
                 </div>
-            </div>
 
-            <div class="horizontal-line"></div>
-
-            <div class="edu">
-                <div class="exp">
-
-                    <div class="exp-info">
-
-                        <h1><b>Academic Assistant</b></h1>
-
-                        <div class="normal-txt">
-                            Department of Computer Science and Engineering <br>
-                            <b><a href="https://green.edu.bd/">Green University of Bangladesh, Dhaka, Bangladesh</a></b>
-                            <br>
-                            Purbachal American City, Kanchan, Dhaka, Bangladesh
-                            <br><br>
-                            <b>Duration:</b> Dec, 2022 - July 2023 (8 Months)
-                            <br>
-                            – Served as an Academic Assistant to Dean of FSE
-                            <br>
-                            – Mentored and Instructed 150+ Students
-                            <br>
-                            – Improved student performance, helping them achieve better outcomes in coursework and
-                            project work.
+                <!-- 2. BJIT Limited -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-header-main">
+                                <h2 class="role-title">Intern - ASP.NET</h2>
+                                <div class="company-name">
+                                    <img src="img/bjit-logo2.svg" alt="BJIT Logo" class="company-logo-header">
+                                    <a href="https://bjitgroup.com/" target="_blank" rel="noopener noreferrer">
+                                        BJIT
+                                    </a>
+                                    <span style="color: var(--text-muted); font-weight: 500;">· Internship</span>
+                                </div>
+                            </div>
+                            <div class="timeline-header-meta">
+                                <span class="badge badge-blue"><i class="fa-solid fa-calendar-days"></i> Nov 2024 – Jan 2025 · 3 mos</span>
+                                <div class="timeline-period">
+                                    <i class="fa-solid fa-location-dot"></i> Baridhara, Dhaka · On-site
+                                </div>
+                            </div>
                         </div>
 
-                    </div>
+                        <div class="timeline-body">
+                            <ul>
+                                <li><strong>Real-Time SignalR ChatHub:</strong> Developed a SignalR-based ChatHub and initiated a log management system using ASP.NET Core and MudBlazor, gaining hands-on experience in real-time communication and authentication flows.</li>
+                                <li><strong>Blazor Enterprise Portals:</strong> Built Blazor applications with MudBlazor components, Entity Framework Core, and Bootstrap for portfolio and employee management systems, implementing search, filtering, and pagination features.</li>
+                                <li><strong>Web APIs &amp; Swagger:</strong> Created multiple ASP.NET Core Web API projects with MS SQL Server, utilizing CRUD operations, stored procedures, pagination, and documenting APIs with Swagger.</li>
+                                <li><strong>Security &amp; JWT:</strong> Implemented JWT authentication and gained practical knowledge in secure API design and frontend-backend integration.</li>
+                                <li><strong>EMed Store Desktop UI:</strong> Developed the EMed Store WinForms application to enhance skills in Forms development and user interface design.</li>
+                                <li><strong>XML Processing Systems:</strong> Created Console and WinForms applications in Visual Studio to read, process, and display XML data, incorporating filtering and search functionality.</li>
+                            </ul>
 
-                    <div class="edu-logo">
-                        <a href="https://green.edu.bd/"><img src="img/gub.png" alt="My University" id="w34"></a>
+                            <div class="tech-tags" style="margin-top: 1.25rem;">
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">SignalR</span>
+                                <span class="tech-tag">MudBlazor</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">Swagger</span>
+                                <span class="tech-tag">WinForms</span>
+                                <span class="tech-tag">SQL Server</span>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
+                <!-- 3. IEEE Computer Society Student Branch Chapter GUB -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-header-main">
+                                <h2 class="role-title">Membership Development Coordinator (MDC)</h2>
+                                <div class="company-name">
+                                    <img src="img/CS SB GUB.png" alt="IEEE CS Logo" class="company-logo-header">
+                                    <span>IEEE Computer Society Student Branch Chapter GUB</span>
+                                    <span style="color: var(--text-muted); font-weight: 500;">· Full-time</span>
+                                </div>
+                            </div>
+                            <div class="timeline-header-meta">
+                                <span class="badge badge-purple"><i class="fa-solid fa-calendar-days"></i> Jan 2023 – May 2024 · 1 yr 5 mos</span>
+                                <div class="timeline-period">
+                                    <i class="fa-solid fa-location-dot"></i> Purbachal American City · Hybrid
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Deeply honored to serve as the Membership Development Coordinator at IEEE GUB Computer Society, collaborating with a dedicated team to manage resources and foster a culture of innovation.</li>
+                                <li>Facilitated international research partnerships with seasoned IEEE scholars and inspired peers to engage in scientific publishing.</li>
+                                <li>Organized competitive programming workshops, tech seminars, and conference student participation.</li>
+                            </ul>
+
+                            <div style="margin-top: 1rem;">
+                                <button class="btn btn-sm btn-secondary" onclick="openModal('img/Certificate of MDC IEEE CS GUB.jpg')">
+                                    <i class="fa-solid fa-certificate text-cyan"></i> View Recognition Certificate
+                                </button>
+                            </div>
+
+                            <div class="tech-tags" style="margin-top: 1.25rem;">
+                                <span class="tech-tag">IEEE Leadership</span>
+                                <span class="tech-tag">Community Building</span>
+                                <span class="tech-tag">Event Coordination</span>
+                                <span class="tech-tag">Research Facilitation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Academic Assistant at Green University of Bangladesh -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-header-main">
+                                <h2 class="role-title">Academic Assistant</h2>
+                                <div class="company-name">
+                                    <img src="img/gub.png" alt="GUB Logo" class="company-logo-header">
+                                    <a href="https://green.edu.bd/" target="_blank" rel="noopener noreferrer">
+                                        Green University of Bangladesh
+                                    </a>
+                                    <span style="color: var(--text-muted); font-weight: 500;">· Part-time</span>
+                                </div>
+                            </div>
+                            <div class="timeline-header-meta">
+                                <span class="badge badge-cyan"><i class="fa-solid fa-calendar-days"></i> Dec 2022 – Jul 2023 · 8 mos</span>
+                                <div class="timeline-period">
+                                    <i class="fa-solid fa-location-dot"></i> Purbachal American City · Hybrid
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-body">
+                            <ul>
+                                <li><strong>Dedicated to Educational Leadership:</strong> Mentored and instructed <strong>150+ students</strong> across computer programming, data structures, and algorithmic principles.</li>
+                                <li>Served as an Academic Assistant to the Former Department Chairman and Current Dean of the Faculty of Science &amp; Engineering (FSE).</li>
+                                <li>Gained valuable insights into academic administration, departmental operations, and programming pedagogy.</li>
+                            </ul>
+
+                            <div class="tech-tags" style="margin-top: 1.25rem;">
+                                <span class="tech-tag">Mentorship</span>
+                                <span class="tech-tag">C / C++</span>
+                                <span class="tech-tag">Data Structures</span>
+                                <span class="tech-tag">Algorithms</span>
+                                <span class="tech-tag">Academic Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Robo Tech Valley Research Internship -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-header-main">
+                                <h2 class="role-title">Industrial Research Intern (Humanoids Robotics)</h2>
+                                <div class="company-name">
+                                    <img src="img/RoboTechValley.jpg" alt="Robo Tech Valley Logo" class="company-logo-header">
+                                    <a href="https://www.robotechvalley.com/" target="_blank" rel="noopener noreferrer">
+                                        Robo Tech Valley
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="timeline-header-meta">
+                                <span class="badge badge-blue"><i class="fa-solid fa-calendar-days"></i> 3 Months</span>
+                                <div class="timeline-period">
+                                    <i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-body">
+                            <p>
+                                <strong>Supervisor:</strong> ASM Ahsanul Sarkar Akib (Managing Director &amp; CEO)<br>
+                                <strong>Focus:</strong> Embedded Systems, Raspberry Pi Control, Autonomous Humanoid Robotics
+                            </p>
+                            <ul>
+                                <li>Engineered real-time motor control loops and sensory decision logic for humanoid robotic prototypes.</li>
+                                <li>Co-authored research paper presented at <strong>ICCMA 2024</strong> (Brunel University London, UK) and published in <strong>IEEE Xplore</strong>.</li>
+                            </ul>
+
+                            <div class="tech-tags" style="margin-top: 1.25rem;">
+                                <span class="tech-tag">Raspberry Pi</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Humanoid Robotics</span>
+                                <span class="tech-tag">IEEE Publication</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-
-
-
-            <div class="exp-title"><button><span>Research Experience</span></button></div>
-            <div class="exp">
-
-                <!-- Undergraduate Research Section -->
-                <div class="exp-info">
-                    <h1><b>Undergraduate Research</b></h1>
-                    <div class="normal-txt">
-                        <b><a href="https://green.edu.bd/">Green University of Bangladesh, Dhaka, Bangladesh</a></b>
-                        <br>
-                        Department of Computer Science and Engineering <br>
-                        Purbachal American City, Kanchan, Dhaka, Bangladesh
-                        <br><br>
-                        <b>Time Period:</b> 1 Year
-                        <br>
-                        <b>Research Area:</b> Natural Language Processing (NLP)
-                        <br>
-                        <b>Supervisor:</b> Prof. Dr. Md. Saiful Azad, Dean of FSE, Green University of Bangladesh
-                        <br>
-                        <b>Title:</b> Enhancing the Tree-Based Keyphrase Extraction Technique Using Embedding Technique
-                        <br>
-                        <b>Publication:</b>  Published in IEEE Xplore and presented at the 2024 6th International Conference on Sustainable Technologies for Industry 5.0 (STI 2024).
-                    </div>
-                </div>
-            
-                <div class="edu-logo">
-                    <a href="https://green.edu.bd/"><img src="img/gub.png" alt="My University" id="w34"></a>
-                </div>
-            </div>
-            
-            <div class="exp">
-            
-                <!-- Industrial Research Internship Section -->
-                <div class="exp-info">
-                    <h1><b>Industrial Research Internship</b></h1>
-                    <div class="normal-txt">
-                        <b><a href="https://www.robotechvalley.com/">Robo Tech Valley</a></b>
-                        <br>
-                        Leading Software Development Company Specializing in Humanoids Robotics
-                        <br><br>
-                        <b>Time Period:</b> 3 Months
-                        <br>
-                        <b>Research Area:</b> Humanoids Robotics
-                        <br>
-                        <b>Supervisor:</b> ASM Ahsanul Sarkar Akib, Managing Director and CEO, Robo Tech Valley
-                        <br>
-                        <b>Title:</b> A Raspberry Pi Driven Autonomous Humanoid Robot for Advanced Applications
-                        <br>
-                        <b>Publication:</b>  Published in IEEE Xplore and presented at the 12th ICCMA 2024, sponsored by Brunel
-                        University London, UK.
-                       
-                    </div>
-                </div>
-            
-                <div class="edu-logo">
-                    <a href="https://www.robotechvalley.com/"><img src="img/RoboTechValley.jpg" alt="Robo Tech Valley" id="w34"></a>
-                </div>
-            </div>
-            
-
-
-            <div class="exp-title"><button><span>Leadership Experience</span></button></div>
-            <div class="exp">
-
-                <div class="exp-info">
-
-                    <h1><b>Membership Development Coordinator</b></h1>
-
-                    <div class="normal-txt">
-                        IEEE Computer Society Student Branch Chapter GUB <br>
-                        <b><a href="https://green.edu.bd/">Green University of Bangladesh, Dhaka, Bangladesh</a></b>
-                        <br>
-                        Purbachal American City, Kanchan, Dhaka, Bangladesh
-                        <br><br>
-                        <b>Duration:</b> Dec, 2022 - Feb 2024 (1 Year +)
-                        <br>
-                        – Facilitated collaborations with national and international IEEE researchers
-                        <br>
-                        – Inspired individuals to engage in impactful research endeavors
-                        <br>
-                        – Committed to efficient resource managemen
-                    </div>
-
-                </div>
-
-                <div class="edu-logo">
-                    <a href="https://www.facebook.com/ieeecssbcgub"><img src="img/CS SB GUB.png" alt="My University"
-                            id="w34"></a>
-                </div>
-
-            </div>
-
-
-
         </div>
+    </main>
 
-        <footer>
-            <div class="footer" id="footer">
-
-                <div class="ft-item11 footer-hov">
-
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Contact Information</i>
-                    </div>
-
-                    <div class="social-item footer-content2">
-                        <a href="mailto:ws.akram330@gmail.com">ws.akram330@gmail.com</a>
-                        <a href="tel:+01737861695">+8801737861695 (Whatsapp)</a>
-                        <a href="tel:+01521520330">+8801521520330 (Secondary)</a>
-                    </div>
-
-                </div>
-
-                <div class="ft-item11 footer-hov">
-
-                    <div class="footer-title">
-                        <i class="fas fa-globe"> Website</i>
-                    </div>
-
-                    <div class="social-item footer-content2">
-                        <a href="https://github.com/AlienWashim"><i class="fab fa-github"></i> AlienWashim</a>
-                        <a href="https://www.youtube.com/@AlienWashim" target="_blank"><i class="fab fa-youtube"></i> Washim Akram</a>
-                    </div>
-
-                </div>
-
-
-                <div class="ft-item11 footer-hov">
-
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Social Media</i>
-                    </div>
-
-                    <div class="social-item footer-content2">
-                        <a href="https://www.facebook.com/AlienWashim"><i class="fab fa-facebook"></i>AlienWashim</a>
-                        <a href="https://www.twitter.com/AlienWashim"><i class="fab fa-twitter"></i>AlienWashim</a>
-                        <a href="https://www.instagram.com/AlienWashim"><i class="fab fa-instagram"></i>AlienWashim</a>
-                    </div>
-
-                </div>
-
-            </div>
-        </footer>
+    <!-- Global Image Modal Viewer -->
+    <div id="imageModal" class="modal-viewer" role="dialog" aria-modal="true">
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" id="modalClose" aria-label="Close image viewer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="modalImage" class="modal-img" src="" alt="Preview image">
+        </div>
     </div>
-</body>
 
+    <!-- Reusable Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Md Washim Akram" class="nav-brand-avatar">
+            </div>
+          </div>
+          <div class="nav-brand-text">
+                            <span class="nav-brand-name">Washim Akram</span>
+                            <span class="nav-brand-role">Software Developer</span>
+                        </div>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Jr. Software Developer at <strong>AkijBashir Group</strong>. Experienced .NET &amp; Full Stack Developer specializing in ASP.NET Core Web API, Angular, SQL Server, and enterprise scalable solutions.
+                    </p>
+                    <div class="hero-socials">
+                        <a href="https://github.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alienwashim/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link social-yt" title="YouTube" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:ws.akram330@gmail.com" class="social-link" title="Email" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Home</a>
+                        <a href="experience.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Experience</a>
+                        <a href="education.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Education</a>
+                        <a href="project.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Projects</a>
+                        <a href="research.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Research</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Portfolio</h4>
+                    <div class="footer-links">
+                        <a href="award.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Awards &amp; Honors</a>
+                        <a href="course.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Certifications</a>
+                        <a href="activity.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Extra-curricular</a>
+                        <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-solid fa-file-arrow-down"></i> View Resume</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Get in Touch</h4>
+                    <div class="footer-links">
+                        <a href="mailto:ws.akram330@gmail.com" class="footer-link">
+                            <i class="fa-solid fa-envelope text-cyan"></i> ws.akram330@gmail.com
+                        </a>
+                        <a href="tel:+8801737861695" class="footer-link">
+                            <i class="fa-brands fa-whatsapp text-emerald"></i> +8801737861695
+                        </a>
+                        <a href="tel:+8801521520330" class="footer-link">
+                            <i class="fa-solid fa-phone text-blue"></i> +8801521520330
+                        </a>
+                        <span class="footer-link text-muted">
+                            <i class="fa-solid fa-location-dot"></i> Banani &amp; Mirpur, Dhaka
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 <strong>Md. Washim Akram</strong> (AlienWashim). All rights reserved.
+                </div>
+                <div>
+                    Built with Modern Web Standards, .NET &amp; Clean Architecture.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

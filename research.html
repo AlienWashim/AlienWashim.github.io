@@ -1,156 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washim Akram</title>
+    <title>Research Experience &amp; Publications | Md. Washim Akram</title>
+    <meta name="description" content="Research publications and interests of Md. Washim Akram: Natural Language Processing (NLP), Artificial Intelligence, Humanoid Robotics, and IEEE papers.">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/test.css">
     <link rel="icon" type="image/x-icon" href="img/icon.jpg">
-    <script src="js/style.js"></script>
+
+    <!-- Script -->
+    <script src="js/style.js" defer></script>
 </head>
 
 <body>
-    <div class="main_container">
+    <!-- Top Progress Bar -->
+    <div id="page-progress-bar"></div>
 
-        <div class="header" id="head">
-
-            <div class="menu-icon" id="menu-icon">
-                <i class="fas fa-bars"></i> <!-- Font Awesome menu icon -->
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Washim Akram" class="nav-brand-avatar">
             </div>
-
-            <div class="navbar" id="navbar">
-                <div class="nevi1">
-                    <div class="item1"><a href="index.html#about-me" ><i class="fa-solid fa-face-grin-hearts"> About Me</i></a></div>
-                    <div class="item1"><a href="files/Md Washim Akram_CV.pdf" download="Your_CV_Name.pdf"><i class=" fa-solid fa-graduation-cap"> My CV</i></a></div>
-                    <div class="item1"><a href="#footer"><i class="fa-solid fa-address-book"> Contact</i></a></div>
+          </div>
+          <div class="nav-brand-text">
+                    <span class="nav-brand-name">Washim Akram</span>
+                    <span class="nav-brand-role">Software Developer</span>
                 </div>
-        
-                <div class="nevi2">
-                    <div class="item2"><a href="education.html">Education</a></div>
-                    <div class="item2"><a href="experience.html">Experiences</a></div>
-                    <div class="item2"><a href="research.html">Research Experience</a></div>
-                    <div class="item2"><a href="project.html">Projects</a></div>
-                    <div class="item2"><a href="course.html">Courses</a></div>
-                    <div class="item2"><a href="award.html">Award and Certification</a></div>
-                    <div class="item2"><a href="activity.html">Extra-curricular Activities</a></div>
-                </div>
-                
-            </div>
-        </div> 
-        
+            </a>
 
-        <div class="exp-content" id="exp-start">
-
-            <div class="exp-title"><button><span>Research Interest</span></button></div>
-            <div class="exp">
-
-                <div class="exp-info">
-
-                    <h1><b>Research Interest:</b></h1>
-
-                    <div class="normal-txt">
-                        <ul>
-                            <li>Artificial Intelligence (AI)</li>
-                            <li>Natural Language Processing (NLP)</li>
-                            <li>Machine Learning</li>
-                            <li>Internet of Things (IoT)</li>
-                            <li>Blockchain</li>
-                            <li>Cyber Security</li>
-                          </ul>                          
-                    </div>
-
+            <nav class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="project.html" class="nav-link">Projects</a>
+                    <a href="research.html" class="nav-link active">Research</a>
+                    <a href="award.html" class="nav-link">Awards</a>
+                    <a href="course.html" class="nav-link">Courses</a>
+                    <a href="activity.html" class="nav-link">Activities</a>
                 </div>
 
-            </div>
-
-
-            <div class="exp-title"><button><span>List of Publications</span></button></div>
-            <div class="exp">
-
-                <div class="exp-info">
-
-                    <div class="normal-txt">
-                        <ul>
-                            <li>
-                                Enhancing Tree-Based Keyphrase Extraction Technique using Embedding Technique 
-                                <a href="https://ieeexplore.ieee.org/document/10951078" target="_blank" style="color: #0077cc; font-weight: bold; text-decoration: none;"> [Link]</a><br>
-                                — Published in the IEEE Proceedings of STI 2024, 6th International Conference on Sustainable Technologies for Industry 5.0
-                            </li>
-                    
-                            <br>
-                    
-                            <li>
-                                A Raspberry Pi Driven Autonomous Humanoid Robot for Advanced Applications 
-                                <a href="https://ieeexplore.ieee.org/document/10843899" target="_blank" style="color: #0077cc; font-weight: bold; text-decoration: none;"> [Link]</a><br>
-                                — Published in the IEEE Proceedings of 12th ICCMA 2024, hosted by Brunel University London, UK
-                            </li>
-                        </ul>
-                    </div>                    
-                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                    <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                        <i class="fa-solid fa-file-arrow-down"></i> Resume
+                    </a>
                 </div>
-                
+            </nav>
 
-            </div>
-
-
-
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
+    </header>
 
-
-
-        <footer>
-            <div class="footer" id="footer" >
-    
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Contact Information</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                       <a href="mailto:ws.akram330@gmail.com">ws.akram330@gmail.com</a>
-                      <a href="tel:+01737861695">+8801737861695 (Whatsapp)</a>
-                       <a href="tel:+01521520330">+8801521520330 (Secondary)</a> 
-                    </div>
-        
-                </div>
-        
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-globe"> Website</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                        <a href="https://github.com/AlienWashim" target="_blank"><i class="fab fa-github"></i> AlienWashim</a>
-                        <a href="https://www.youtube.com/@AlienWashim" target="_blank"><i class="fab fa-youtube"></i> Washim Akram</a>
-                    </div>
-                    
-                </div>
-                  
-        
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Social Media</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                        <a href="https://www.facebook.com/AlienWashim" target="_blank"><i class="fab fa-facebook"></i>AlienWashim</a>
-                        <a href="https://www.twitter.com/AlienWashim" target="_blank"><i class="fab fa-twitter"></i>AlienWashim</a>
-                        <a href="https://www.instagram.com/AlienWashim" target="_blank"><i class="fab fa-instagram"></i>AlienWashim</a>
-                    </div>
-        
-                </div>
-        
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-flask"></i> Scholarly Work</span>
+                <h1 class="section-title">Research &amp; Publications</h1>
+                <p class="section-subtitle">Investigating Natural Language Processing, word embeddings, and autonomous intelligent systems.</p>
             </div>
-        </footer>
-    </div>
-</body>
 
+            <!-- Research Interests -->
+            <div class="card" style="margin-bottom: 3.5rem;">
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <span class="badge badge-cyan">Interests</span>
+                </div>
+                <h2 class="card-title">Core Research Focus Areas</h2>
+                <p class="card-text">
+                    My academic research endeavors bridge theoretical computer science and applied machine learning to build more intelligent, context-aware computing systems:
+                </p>
+                <div class="skills-pill-group" style="margin-top: 1rem;">
+                    <span class="skill-pill"><i class="fa-solid fa-language"></i> Natural Language Processing (NLP)</span>
+                    <span class="skill-pill"><i class="fa-solid fa-diagram-project"></i> Keyphrase &amp; Keyword Extraction</span>
+                    <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> Dense Word Embeddings</span>
+                    <span class="skill-pill"><i class="fa-solid fa-robot"></i> Autonomous Humanoid Robotics</span>
+                    <span class="skill-pill"><i class="fa-solid fa-microchip"></i> Embedded Systems &amp; Raspberry Pi</span>
+                    <span class="skill-pill"><i class="fa-solid fa-chart-pie"></i> Applied Machine Learning</span>
+                </div>
+            </div>
+
+            <!-- Publications Grid -->
+            <div class="section-header" style="margin-bottom: 2.5rem;">
+                <span class="section-tag"><i class="fa-solid fa-book-bookmark"></i> IEEE Publications</span>
+                <h2 class="section-title">Published Papers &amp; Proceedings</h2>
+            </div>
+
+            <div class="card-grid" style="grid-template-columns: 1fr;">
+                <!-- Paper 1 -->
+                <div class="card" style="border-left: 4px solid var(--accent-blue);">
+                    <div class="card-top">
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <span class="badge badge-blue">IEEE Xplore</span>
+                            <span class="badge badge-cyan">STI 2024 Conference</span>
+                        </div>
+                        <span class="text-muted" style="font-size: 0.85rem;"><i class="fa-regular fa-calendar"></i> 2024</span>
+                    </div>
+
+                    <h2 class="card-title" style="font-size: 1.45rem; margin-top: 0.5rem;">
+                        Enhancing the Tree-Based Keyphrase Extraction Technique Using Embedding Technique
+                    </h2>
+
+                    <p style="font-size: 0.925rem; color: var(--accent-blue); font-weight: 600; margin-bottom: 0.75rem;">
+                        <strong>Authors:</strong> Md. Washim Akram, Prof. Dr. Md. Saiful Azad, et al.
+                    </p>
+
+                    <p class="card-text">
+                        <strong>Abstract / Contribution:</strong> Keyphrase extraction is a fundamental task in Information Retrieval and Natural Language Processing. Traditional tree-based hierarchical extraction frameworks often overlook deeper contextual relationships between candidate phrases. This paper introduces an augmented methodology integrating dense embedding representations into tree-based parse graphs, yielding significant performance improvements in identifying salient keywords across unstructured corpora.
+                    </p>
+
+                    <div style="background: rgba(255, 255, 255, 0.03); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0;">
+                            <strong>Venue:</strong> 2024 6th International Conference on Sustainable Technologies for Industry 5.0 (STI 2024), Green University of Bangladesh.<br>
+                            <strong>Supervisor:</strong> Prof. Dr. Md. Saiful Azad, Professor &amp; Dean of the Faculty of Science and Engineering (FSE).
+                        </p>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                        <button class="btn btn-sm btn-secondary" onclick="openModal('img/Paper Presentation Certificate.jpg')">
+                            <i class="fa-solid fa-certificate text-cyan"></i> View Presentation Certificate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Paper 2 -->
+                <div class="card" style="border-left: 4px solid var(--accent-cyan);">
+                    <div class="card-top">
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <span class="badge badge-blue">IEEE Xplore</span>
+                            <span class="badge badge-emerald">ICCMA 2024 Conference</span>
+                        </div>
+                        <span class="text-muted" style="font-size: 0.85rem;"><i class="fa-regular fa-calendar"></i> 2024</span>
+                    </div>
+
+                    <h2 class="card-title" style="font-size: 1.45rem; margin-top: 0.5rem;">
+                        A Raspberry Pi Driven Autonomous Humanoid Robot for Advanced Applications
+                    </h2>
+
+                    <p style="font-size: 0.925rem; color: var(--accent-blue); font-weight: 600; margin-bottom: 0.75rem;">
+                        <strong>Authors:</strong> Md. Washim Akram, ASM Ahsanul Sarkar Akib, et al.
+                    </p>
+
+                    <p class="card-text">
+                        <strong>Abstract / Contribution:</strong> Presents the architecture and algorithmic pipeline of an autonomous humanoid robotic platform built on single-board computer architecture (Raspberry Pi). The system integrates multi-sensor telemetry, inverse kinematics, real-time motor control loops, and environmental feedback to deliver reliable stability, navigation, and human-assistive capabilities in complex dynamic terrains.
+                    </p>
+
+                    <div style="background: rgba(255, 255, 255, 0.03); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0;">
+                            <strong>Venue:</strong> 12th International Conference on Control, Mechatronics and Automation (ICCMA 2024), sponsored by Brunel University London, UK.<br>
+                            <strong>Affiliation:</strong> Robo Tech Valley | <strong>Supervisor:</strong> ASM Ahsanul Sarkar Akib (MD &amp; CEO).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Global Image Modal Viewer -->
+    <div id="imageModal" class="modal-viewer" role="dialog" aria-modal="true">
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" id="modalClose" aria-label="Close image viewer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="modalImage" class="modal-img" src="" alt="Preview image">
+        </div>
+    </div>
+
+    <!-- Reusable Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Washim Akram" class="nav-brand-avatar">
+            </div>
+          </div>
+          <div class="nav-brand-text">
+                            <span class="nav-brand-name">Washim Akram</span>
+                            <span class="nav-brand-role">Software Developer</span>
+                        </div>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Junior Software Developer at <strong>AkijBashir Group</strong>. Specializing in high-performance web applications with ASP.NET Core, Blazor, C#, SQL Server, and modern full-stack architectures.
+                    </p>
+                    <div class="hero-socials">
+                        <a href="https://github.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/AlienWashim/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:ws.akram330@gmail.com" class="social-link" title="Email" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Home</a>
+                        <a href="experience.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Experience</a>
+                        <a href="education.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Education</a>
+                        <a href="project.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Projects</a>
+                        <a href="research.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Research</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Portfolio</h4>
+                    <div class="footer-links">
+                        <a href="award.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Awards &amp; Honors</a>
+                        <a href="course.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Certifications</a>
+                        <a href="activity.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Extra-curricular</a>
+                        <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-solid fa-file-arrow-down"></i> View Resume</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Get in Touch</h4>
+                    <div class="footer-links">
+                        <a href="mailto:ws.akram330@gmail.com" class="footer-link">
+                            <i class="fa-solid fa-envelope text-cyan"></i> ws.akram330@gmail.com
+                        </a>
+                        <a href="tel:+8801737861695" class="footer-link">
+                            <i class="fa-brands fa-whatsapp text-emerald"></i> +8801737861695
+                        </a>
+                        <a href="tel:+8801521520330" class="footer-link">
+                            <i class="fa-solid fa-phone text-blue"></i> +8801521520330
+                        </a>
+                        <span class="footer-link text-muted">
+                            <i class="fa-solid fa-location-dot"></i> Kazipara, Mirpur 10, Dhaka
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 <strong>Md. Washim Akram</strong> (AlienWashim). All rights reserved.
+                </div>
+                <div>
+                    Designed &amp; Developed with Modern Web Standards.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

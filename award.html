@@ -1,222 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washim Akram</title>
+    <title>Awards &amp; Certifications | Md. Washim Akram</title>
+    <meta name="description" content="Awards, honors, and certificates earned by Md. Washim Akram - Vice Chancellor awards, IEEE Xtreme rank, STI 2024 conference presentations.">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/test.css">
     <link rel="icon" type="image/x-icon" href="img/icon.jpg">
-    <script src="js/style.js"></script>
+
+    <!-- Script -->
+    <script src="js/style.js" defer></script>
 </head>
 
 <body>
-    <div class="main_container">
+    <!-- Top Progress Bar -->
+    <div id="page-progress-bar"></div>
 
-        <div class="header" id="head">
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Washim Akram" class="nav-brand-avatar">
+            </div>
+          </div>
+          <div class="nav-brand-text">
+                    <span class="nav-brand-name">Washim Akram</span>
+                    <span class="nav-brand-role">Software Developer</span>
+                </div>
+            </a>
 
-            <div class="menu-icon" id="menu-icon">
-                <i class="fas fa-bars"></i> <!-- Font Awesome menu icon -->
+            <nav class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="project.html" class="nav-link">Projects</a>
+                    <a href="research.html" class="nav-link">Research</a>
+                    <a href="award.html" class="nav-link active">Awards</a>
+                    <a href="course.html" class="nav-link">Courses</a>
+                    <a href="activity.html" class="nav-link">Activities</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                    <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                        <i class="fa-solid fa-file-arrow-down"></i> Resume
+                    </a>
+                </div>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-trophy"></i> Recognition &amp; Honors</span>
+                <h1 class="section-title">Awards &amp; Certifications</h1>
+                <p class="section-subtitle">Academic excellence recognitions, conference presentation honors, and competitive programming achievements.</p>
             </div>
 
-            <div class="navbar" id="navbar">
-                <div class="nevi1">
-                    <div class="item1"><a href="index.html#about-me"><i class="fa-solid fa-face-grin-hearts"> About
-                                Me</i></a></div>
-                    <div class="item1"><a href="files/Md Washim Akram_CV.pdf" download="Your_CV_Name.pdf"><i
-                                class=" fa-solid fa-graduation-cap"> My CV</i></a></div>
-                    <div class="item1"><a href="#footer"><i class="fa-solid fa-address-book"> Contact</i></a></div>
+            <!-- Highlights Banner -->
+            <div class="stats-grid" style="margin-bottom: 3.5rem;">
+                <div class="stat-card">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Vice Chancellor's Awards</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Dean's Award for Academic Excellence</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">13th</span>
+                    <span class="stat-label">National Rank in IEEE Xtreme 17.0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Meritorious Award (GUB)</span>
+                </div>
+            </div>
+
+            <!-- Awards Grid -->
+            <div class="card-grid">
+                <!-- 1. STI 2024 Paper Presentation -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('img/Paper Presentation Certificate.jpg')">
+                        <img src="img/Paper Presentation Certificate.jpg" alt="Paper Presentation Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-cyan" style="align-self: flex-start; margin-bottom: 0.5rem;">Conference Honor</span>
+                        <h2 class="cert-title">Certificate of Paper Presentation (STI 2024)</h2>
+                        <span class="cert-issuer">6th International Conference on Sustainable Technologies for Industry 5.0</span>
+                        <p class="cert-desc">
+                            Presented research paper <em>"Enhancing Tree-Based Keyphrase Extraction Technique Using Embedding Technique"</em> in the Computational Linguistics &amp; Natural Language Processing track.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="nevi2">
-                    <div class="item2"><a href="education.html">Education</a></div>
-                    <div class="item2"><a href="experience.html">Experiences</a></div>
-                    <div class="item2"><a href="research.html">Research Experience</a></div>
-                    <div class="item2"><a href="project.html">Projects</a></div>
-                    <div class="item2"><a href="course.html">Courses</a></div>
-                    <div class="item2"><a href="award.html">Award and Certification</a></div>
-                    <div class="item2"><a href="activity.html">Extra-curricular Activities</a></div>
+                <!-- 2. Vice Chancellor Award Spring 2022 -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('files/VC_Spring_2022.jpg')">
+                        <img src="files/VC_Spring_2022.jpg" alt="Vice Chancellor Award Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-emerald" style="align-self: flex-start; margin-bottom: 0.5rem;">Academic Excellence</span>
+                        <h2 class="cert-title">Vice Chancellor's Award - Spring 2022</h2>
+                        <span class="cert-issuer">Green University of Bangladesh</span>
+                        <p class="cert-desc">
+                            Awarded for extraordinary academic distinction and maintaining a pristine GPA at the top tier of the CSE department.
+                        </p>
+                    </div>
                 </div>
 
+                <!-- 3. Vice Chancellor Award Summer 2022 -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('files/VC_Summer_2022.jpg')">
+                        <img src="files/VC_Summer_2022.jpg" alt="Vice Chancellor Award Certificate Summer 2022">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-emerald" style="align-self: flex-start; margin-bottom: 0.5rem;">Academic Excellence</span>
+                        <h2 class="cert-title">Vice Chancellor's Award - Summer 2022</h2>
+                        <span class="cert-issuer">Green University of Bangladesh</span>
+                        <p class="cert-desc">
+                            Conferred by the university administration in recognition of consecutive outstanding term performance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4. Dean's Award Summer 2021 -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('files/Dean_Summer_2021.jpg')">
+                        <img src="files/Dean_Summer_2021.jpg" alt="Dean's Award Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: 0.5rem;">Faculty Honor</span>
+                        <h2 class="cert-title">Dean's Award - Summer 2021</h2>
+                        <span class="cert-issuer">Faculty of Science &amp; Engineering, GUB</span>
+                        <p class="cert-desc">
+                            Honored by the Dean of FSE for superior scholastic achievement across fundamental engineering coursework.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 5. IEEE Xtreme 17.0 -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('files/IEEEXtreme GreenT Certificate of Participation.jpg')">
+                        <img src="files/IEEEXtreme GreenT Certificate of Participation.jpg" alt="IEEE Xtreme Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-cyan" style="align-self: flex-start; margin-bottom: 0.5rem;">Programming Contest</span>
+                        <h2 class="cert-title">IEEE Xtreme 17.0 Global Programming Contest</h2>
+                        <span class="cert-issuer">IEEE (Institute of Electrical and Electronics Engineers)</span>
+                        <p class="cert-desc">
+                            Ranked <strong>13th in Bangladesh</strong> and <strong>1807th globally</strong> in the prestigious 24-hour worldwide competitive programming contest.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 6. IDPC 2024 Programming Contest -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('files/Certificate_IDPC 2024 CSE GUB.jpg')">
+                        <img src="files/Certificate_IDPC 2024 CSE GUB.jpg" alt="IDPC 2024 Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: 0.5rem;">Competition</span>
+                        <h2 class="cert-title">Inter-Department Programming Contest (IDPC)</h2>
+                        <span class="cert-issuer">Green University Computer Club (GUCC)</span>
+                        <p class="cert-desc">
+                            Demonstrated competitive problem-solving skills, algorithmic speed, and code optimization in the university-wide championship.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 7. IEEE Computer Society Chapter MDC Award -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('img/Certificate of MDC IEEE CS GUB.jpg')">
+                        <img src="img/Certificate of MDC IEEE CS GUB.jpg" alt="IEEE CS MDC Recognition Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-emerald" style="align-self: flex-start; margin-bottom: 0.5rem;">Leadership</span>
+                        <h2 class="cert-title">Membership Development Coordinator Recognition</h2>
+                        <span class="cert-issuer">IEEE Computer Society Student Branch Chapter GUB</span>
+                        <p class="cert-desc">
+                            Awarded for outstanding leadership, strategic community expansion, and successful execution of research-oriented technical initiatives.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 8. STI 5.0 Conference Organization -->
+                <div class="cert-card">
+                    <div class="cert-thumbnail" onclick="openModal('files/Certificate_STI 5.0 GUB.jpg')">
+                        <img src="files/Certificate_STI 5.0 GUB.jpg" alt="STI 5.0 Certificate">
+                        <div class="cert-overlay">
+                            <i class="fa-solid fa-expand"></i> Click to Enlarge
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <span class="badge badge-cyan" style="align-self: flex-start; margin-bottom: 0.5rem;">Conference Certificate</span>
+                        <h2 class="cert-title">5th International Conference on STI 5.0</h2>
+                        <span class="cert-issuer">IEEE Bangladesh Section &amp; GUB</span>
+                        <p class="cert-desc">
+                            Recognized for valuable contributions to the technical paper review and conference operational coordination.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
+    </main>
 
-
-        <div class="exp-content" id="exp-start">
-
-            <div class="exp-title"><button><span>Conference Honors & Certificates</span></button></div>
-
-            <div class="award-list">
-
-                <div class="award-item">
-                    <img src="img/Paper Presentation Certificate.jpg" alt="Paper Presentation Certificate">
-                    <div class="text-container">
-                        <p class="title">Certificate of Paper Presentation</p>
-                        <p class="description">Presented a research paper titled "Enhancing Tree-Based Keyphrase Extraction Technique Using Embedding Technique" under the Computational Linguistics and Natural Language Processing track at the STI 2024 International Conference. Received a certificate for paper presentation and gained invaluable experience from this international platform focused on Industry 5.0 advancements.</p>
-                    </div>                    
-                </div>
-
-                <!-- Add more award items as needed -->
-            </div>
-
-            <div class="exp-title"><button><span>Academic Awards</span></button></div>
-
-            <div class="award-list">
-
-                <div class="award-item">
-                    <img src="files/Dean_Summer_2021.jpg" alt="Award Image">
-                    <div class="text-container">
-                        <p class="title">Dean's Award</p>
-                        <p class="description">Placed in the Dean's list of Meritorious Students for Summer Semester 2021</p>
-                    </div>
-                </div>
-
-                
-                <div class="award-item">
-                    <img src="files/VC_Spring_2022.jpg" alt="Award Image">
-                    <div class="text-container">
-                        <p class="title">Vice Chancellor's Award</p>
-                        <p class="description">Placed in the Vice Chancellor's list of Meritorious Students for Spring Semester 2022</p>
-                    </div>
-                </div>
-
-                <div class="award-item">
-                    <img src="files/VC_Summer_2022.jpg" alt="Award Image">
-                    <div class="text-container">
-                        <p class="title">Vice Chancellor's Award</p>
-                        <p class="description">Placed in the  Vice Chancellor's list of Meritorious Students for Summer Semester 2022</p>
-                    </div>
-                </div>
-
-                <!-- Add more award items as needed -->
-            </div>
-
-
-
-            <div class="exp-title"><button><span>Membership Certificates</span></button></div>
-
-            <div class="award-list">
-
-                <div class="award-item">
-                    <img src="files/Certificate_IEEE Membership.png" alt="Award Image">
-                    <div class="text-container">
-                        <p class="title">Certificate of IEEE Membership</p>
-                        <p class="description"><b>Year: </b>2023</p>
-                    </div>
-                </div>
-
-                <div class="award-item">
-                    <img src="files/Certificate_IEEE Computer Society.png" alt="Award Image">
-                    <div class="text-container">
-                        <p class="title">Certificate of IEEE Computer Society</p>
-                        <p class="description"><b>Year: </b>2023</p>
-                    </div>
-                </div>
-
-                <!-- Add more award items as needed -->
-            </div>
-
-            <div class="exp-title"><button><span>Competition</span></button></div>
-
-            <div class="award-list">
-
-                <div class="award-item">
-                    <img src="files/IEEEXtreme GreenT Certificate of Participation.jpg" alt="Award Image">
-                    <div class="text-container">
-                        <p class="title">Certificate of Participation</p>
-                        <p class="description">Participated in the IEEE Xtreme 17.0 programming competition on October
-                            28, 2023. Team "GreenT" achieved the 13th position nationally and 1807th
-                            globally. Received a participation certificate and valuable experience.</p>
-                    </div>
-                </div>
-
-                <!-- Add more award items as needed -->
-            </div>
-
-
-            <div class="exp-title"><button><span>Webinar / Workshops</span></button></div>
-
-            <div class="award-list">
-
-                <div class="award-item">
-                    <img src="files/Webinar_Exploring the Terrain Unveiling Careers in Automation Testing and Software Quality Assurance.png" alt="Award Image">
-                    <div class="text-container">
-                        <p class="title">Certificate of Participation</p>
-                        <p class="description">Exploring the Terrain Unveiling Careers in Automation Testing and Software Quality Assurance</p>
-                    </div>
-                </div>
-
-                <div class="award-item">
-                    <img src="files/Webinar_IEEE A Gateway for Worldwide Successful Engineering Career in 41R.png" alt="Award Image">
-                    <div class="text-container">
-                        <p class="title">Certificate of Participation</p>
-                        <p class="description">IEEE A Gateway for Worldwide Successful Engineering Career in 41R</p>
-                    </div>
-                </div>
-
-                <!-- Add more award items as needed -->
-            </div>
-
-
-
-
-
+    <!-- Global Image Modal Viewer -->
+    <div id="imageModal" class="modal-viewer" role="dialog" aria-modal="true">
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" id="modalClose" aria-label="Close image viewer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="modalImage" class="modal-img" src="" alt="Preview image">
         </div>
-
-
-
-        <footer>
-            <div class="footer" id="footer" >
-    
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Contact Information</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                       <a href="mailto:ws.akram330@gmail.com">ws.akram330@gmail.com</a>
-                      <a href="tel:+01737861695">+8801737861695 (Whatsapp)</a>
-                       <a href="tel:+01521520330">+8801521520330 (Secondary)</a> 
-                    </div>
-        
-                </div>
-        
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-globe"> Website</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                        <a href="https://github.com/AlienWashim"><i class="fab fa-github"></i> AlienWashim</a>
-                        <a href="https://www.youtube.com/@AlienWashim" target="_blank"><i class="fab fa-youtube"></i> Washim Akram</a>
-                    </div>
-                    
-                </div>
-                  
-        
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Social Media</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                        <a href="https://www.facebook.com/AlienWashim"><i class="fab fa-facebook"></i>AlienWashim</a>
-                        <a href="https://www.twitter.com/AlienWashim"><i class="fab fa-twitter"></i>AlienWashim</a>
-                        <a href="https://www.instagram.com/AlienWashim"><i class="fab fa-instagram"></i>AlienWashim</a>
-                    </div>
-        
-                </div>
-        
-            </div>
-        </footer>
     </div>
-</body>
 
+    <!-- Reusable Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Washim Akram" class="nav-brand-avatar">
+            </div>
+          </div>
+          <div class="nav-brand-text">
+                            <span class="nav-brand-name">Washim Akram</span>
+                            <span class="nav-brand-role">Software Developer</span>
+                        </div>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Junior Software Developer at <strong>AkijBashir Group</strong>. Specializing in high-performance web applications with ASP.NET Core, Blazor, C#, SQL Server, and modern full-stack architectures.
+                    </p>
+                    <div class="hero-socials">
+                        <a href="https://github.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/AlienWashim/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:ws.akram330@gmail.com" class="social-link" title="Email" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Home</a>
+                        <a href="experience.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Experience</a>
+                        <a href="education.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Education</a>
+                        <a href="project.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Projects</a>
+                        <a href="research.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Research</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Portfolio</h4>
+                    <div class="footer-links">
+                        <a href="award.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Awards &amp; Honors</a>
+                        <a href="course.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Certifications</a>
+                        <a href="activity.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Extra-curricular</a>
+                        <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-solid fa-file-arrow-down"></i> View Resume</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Get in Touch</h4>
+                    <div class="footer-links">
+                        <a href="mailto:ws.akram330@gmail.com" class="footer-link">
+                            <i class="fa-solid fa-envelope text-cyan"></i> ws.akram330@gmail.com
+                        </a>
+                        <a href="tel:+8801737861695" class="footer-link">
+                            <i class="fa-brands fa-whatsapp text-emerald"></i> +8801737861695
+                        </a>
+                        <a href="tel:+8801521520330" class="footer-link">
+                            <i class="fa-solid fa-phone text-blue"></i> +8801521520330
+                        </a>
+                        <span class="footer-link text-muted">
+                            <i class="fa-solid fa-location-dot"></i> Kazipara, Mirpur 10, Dhaka
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 <strong>Md. Washim Akram</strong> (AlienWashim). All rights reserved.
+                </div>
+                <div>
+                    Designed &amp; Developed with Modern Web Standards.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

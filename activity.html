@@ -1,144 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washim Akram</title>
+    <title>Extra-Curricular Activities | Md. Washim Akram</title>
+    <meta name="description" content="Leadership roles, IEEE volunteering, and extra-curricular contributions of Md. Washim Akram - ICPC volunteer, STI 5.0, IEEE Computer Society.">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/test.css">
     <link rel="icon" type="image/x-icon" href="img/icon.jpg">
-    <script src="js/style.js"></script>
+
+    <!-- Script -->
+    <script src="js/style.js" defer></script>
 </head>
 
 <body>
-    <div class="main_container">
+    <!-- Top Progress Bar -->
+    <div id="page-progress-bar"></div>
 
-        <div class="header" id="head">
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Washim Akram" class="nav-brand-avatar">
+            </div>
+          </div>
+          <div class="nav-brand-text">
+                    <span class="nav-brand-name">Washim Akram</span>
+                    <span class="nav-brand-role">Software Developer</span>
+                </div>
+            </a>
 
-            <div class="menu-icon" id="menu-icon">
-                <i class="fas fa-bars"></i> <!-- Font Awesome menu icon -->
+            <nav class="nav-menu" id="nav-menu">
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="project.html" class="nav-link">Projects</a>
+                    <a href="research.html" class="nav-link">Research</a>
+                    <a href="award.html" class="nav-link">Awards</a>
+                    <a href="course.html" class="nav-link">Courses</a>
+                    <a href="activity.html" class="nav-link active">Activities</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                    <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                        <i class="fa-solid fa-file-arrow-down"></i> Resume
+                    </a>
+                </div>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-handshake-angle"></i> Leadership &amp; Community</span>
+                <h1 class="section-title">Extra-Curricular Activities</h1>
+                <p class="section-subtitle">Dedicated to empowering technical communities, mentoring students, and organizing premier international conferences.</p>
             </div>
 
-            <div class="navbar" id="navbar">
-                <div class="nevi1">
-                    <div class="item1"><a href="index.html#about-me" onclick="scrollToAboutMe()"><i class="fa-solid fa-face-grin-hearts"> About
-                                Me</i></a></div>
-                    <div class="item1"><a href="files/Md Washim Akram_CV.pdf" download="Your_CV_Name.pdf"><i
-                                class=" fa-solid fa-graduation-cap"> My CV</i></a></div>
-                    <div class="item1"><a href="#footer"><i class="fa-solid fa-address-book"> Contact</i></a></div>
+            <!-- Timeline of Activities -->
+            <div class="timeline">
+                <!-- 1. Membership Development Coordinator IEEE CS -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h2 class="role-title">Membership Development Coordinator (MDC)</h2>
+                                <div class="company-name">
+                                    <i class="fa-solid fa-users"></i> IEEE Computer Society Student Branch Chapter GUB
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <img src="img/CS SB GUB.png" alt="IEEE CS Logo" class="company-logo">
+                                <span class="badge badge-emerald">Dec 2022 - Feb 2024</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-body">
+                            <p>
+                                <em>Green University of Bangladesh Chapter</em>
+                            </p>
+                            <ul>
+                                <li>Spearheaded research partnerships with national and international IEEE scholars, inspiring peers to pursue impactful scientific writing.</li>
+                                <li>Planned and managed technical workshops, competitive programming sessions, and career readiness seminars.</li>
+                                <li>Managed resource allocation and membership operations, receiving official recognition from the executive committee.</li>
+                            </ul>
+                            <div style="margin-top: 1rem;">
+                                <button class="btn btn-sm btn-secondary" onclick="openModal('img/Certificate of MDC IEEE CS GUB.jpg')">
+                                    <i class="fa-solid fa-certificate text-cyan"></i> View Recognition Certificate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="nevi2">
-                    <div class="item2"><a href="education.html">Education</a></div>
-                    <div class="item2"><a href="experience.html">Experiences</a></div>
-                    <div class="item2"><a href="research.html">Research Experience</a></div>
-                    <div class="item2"><a href="project.html">Projects</a></div>
-                    <div class="item2"><a href="course.html">Courses</a></div>
-                    <div class="item2"><a href="award.html">Award and Certification</a></div>
-                    <div class="item2"><a href="activity.html">Extra-curricular Activities</a></div>
+                <!-- 2. Volunteer ICPC -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h2 class="role-title">Contest Volunteer - ICPC Asia Dhaka Regional Contest</h2>
+                                <div class="company-name">
+                                    <i class="fa-solid fa-laptop-code"></i> International Collegiate Programming Contest (ICPC)
+                                </div>
+                            </div>
+                            <div class="timeline-period">
+                                <span class="badge badge-blue">May 2023</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-body">
+                            <p>
+                                <em>Hosted at Green University of Bangladesh</em>
+                            </p>
+                            <ul>
+                                <li>Assisted in orchestrating contest workstations, lab testing environments, and network reliability for hundreds of participating university teams.</li>
+                                <li>Coordinated prompt ballot and score verification with the central judging council.</li>
+                                <li>Ensured an equitable and high-energy competitive atmosphere throughout the regional championship.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- 3. Student Volunteer STI 5.0 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h2 class="role-title">Student Volunteer - 5th International Conference on STI 5.0</h2>
+                                <div class="company-name">
+                                    <i class="fa-solid fa-earth-americas"></i> Sustainable Technologies for Industry 5.0
+                                </div>
+                            </div>
+                            <div class="timeline-period">
+                                <span class="badge badge-cyan">March 2023</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-body">
+                            <p>
+                                <em>Sponsored by IEEE Bangladesh Section</em>
+                            </p>
+                            <ul>
+                                <li>Supported author registrations, presentation session logistics, and technical audiovisual setups for international researchers.</li>
+                                <li>Facilitated keynote transitions and panel discussions centered on Industry 5.0 sustainable tech advancements.</li>
+                            </ul>
+                            <div style="margin-top: 1rem;">
+                                <button class="btn btn-sm btn-secondary" onclick="openModal('files/Certificate_STI 5.0 GUB.jpg')">
+                                    <i class="fa-solid fa-certificate text-cyan"></i> View Volunteer Certificate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Volunteer IDPC Spring 2024 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h2 class="role-title">Executive Volunteer - Inter Department Programming Contest (IDPC)</h2>
+                                <div class="company-name">
+                                    <i class="fa-solid fa-code"></i> Green University Computer Club (GUCC)
+                                </div>
+                            </div>
+                            <div class="timeline-period">
+                                <span class="badge badge-emerald">February 2023</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-body">
+                            <ul>
+                                <li>Coordinated problem set verification, environment setup, and participant assistance during live competition rounds.</li>
+                                <li>Guided junior competitors on submission guidelines, sandbox constraints, and time complexity management.</li>
+                            </ul>
+                            <div style="margin-top: 1rem;">
+                                <button class="btn btn-sm btn-secondary" onclick="openModal('files/Certificate_IDPC 2024 CSE GUB.jpg')">
+                                    <i class="fa-solid fa-certificate text-cyan"></i> View Volunteer Certificate
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </main>
 
-
-        <div class="exp-content" id="exp-start">
-
-            <div class="exp-title"><button><span>Extra-curricular Activities</span></button></div>
-
-            <div class="award-list">
-
-                <div class="award-item">
-                    <img src="img/Certificate of MDC IEEE CS GUB.jpg" alt=" Certificate not recieved yet......">
-                    <div class="text-container">
-                        <p class="title">Certificate of Achievement</p>
-                        <p class="description">Membership Development Co-ordinator, Computer Society Student Branch Chapter, GUB <br> <b>Duration: </b>1 year (2023)</p>
-                    </div>
-                </div>
-
-                <!-- Add more award items as needed -->
-            </div>
-
-
-            <div class="exp-title"><button><span>Certificates of Volunteering</span></button></div>
-
-            <div class="award-list">
-
-                <div class="award-item">
-                    <img src="files/Certificate_STI 5.0 GUB.jpg" alt="Award Image">
-                    <div class="text-container">
-                        <p class="title">International Conference on Sustainable Technologies for Industry 5.0</p>
-                        <p class="description">December 9-10, 2023</p>
-                    </div>
-                </div>
-
-                <div class="award-item">
-                    <img src="files/Certificate_IDPC 2024 CSE GUB.jpg" alt="Award Image">
-                    <div class="text-container">
-                        <p class="title">IDPC, Spring 2023 (Intra Department Programming Contest, Spring 2023)</p>
-                        <p class="description">12th June 2023</p>
-                    </div>
-                </div>
-
-                <!-- Add more award items as needed -->
-            </div>
-
+    <!-- Global Image Modal Viewer -->
+    <div id="imageModal" class="modal-viewer" role="dialog" aria-modal="true">
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" id="modalClose" aria-label="Close image viewer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="modalImage" class="modal-img" src="" alt="Preview image">
         </div>
-
-
-
-        <footer>
-            <div class="footer" id="footer" >
-    
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Contact Information</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                       <a href="mailto:ws.akram330@gmail.com">ws.akram330@gmail.com</a>
-                      <a href="tel:+01737861695">+8801737861695 (Whatsapp)</a>
-                       <a href="tel:+01521520330">+8801521520330 (Secondary)</a> 
-                    </div>
-        
-                </div>
-        
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-globe"> Website</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                        <a href="https://github.com/AlienWashim"><i class="fab fa-github"></i> AlienWashim</a>
-                        <a href="https://www.youtube.com/@AlienWashim" target="_blank"><i class="fab fa-youtube"></i> Washim Akram</a>
-                    </div>
-                    
-                </div>
-                  
-        
-                <div class="ft-item11 footer-hov">
-        
-                    <div class="footer-title">
-                        <i class="fas fa-address-book"> Social Media</i>
-                    </div>
-        
-                    <div class="social-item footer-content2">
-                        <a href="https://www.facebook.com/AlienWashim"><i class="fab fa-facebook"></i>AlienWashim</a>
-                        <a href="https://www.twitter.com/AlienWashim"><i class="fab fa-twitter"></i>AlienWashim</a>
-                        <a href="https://www.instagram.com/AlienWashim"><i class="fab fa-instagram"></i>AlienWashim</a>
-                    </div>
-        
-                </div>
-        
-            </div>
-        </footer>
     </div>
-</body>
 
+    <!-- Reusable Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img src="img/Washim-removebg-preview.png" alt="Washim Akram" class="nav-brand-avatar">
+            </div>
+          </div>
+          <div class="nav-brand-text">
+                            <span class="nav-brand-name">Washim Akram</span>
+                            <span class="nav-brand-role">Software Developer</span>
+                        </div>
+                    </a>
+                    <p class="footer-brand-desc">
+                        Junior Software Developer at <strong>AkijBashir Group</strong>. Specializing in high-performance web applications with ASP.NET Core, Blazor, C#, SQL Server, and modern full-stack architectures.
+                    </p>
+                    <div class="hero-socials">
+                        <a href="https://github.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/AlienWashim/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/AlienWashim" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="mailto:ws.akram330@gmail.com" class="social-link" title="Email" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Home</a>
+                        <a href="experience.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Experience</a>
+                        <a href="education.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Education</a>
+                        <a href="project.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Projects</a>
+                        <a href="research.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Research</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Portfolio</h4>
+                    <div class="footer-links">
+                        <a href="award.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Awards &amp; Honors</a>
+                        <a href="course.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Certifications</a>
+                        <a href="activity.html" class="footer-link"><i class="fa-solid fa-angle-right"></i> Extra-curricular</a>
+                        <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-solid fa-file-arrow-down"></i> View Resume</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Get in Touch</h4>
+                    <div class="footer-links">
+                        <a href="mailto:ws.akram330@gmail.com" class="footer-link">
+                            <i class="fa-solid fa-envelope text-cyan"></i> ws.akram330@gmail.com
+                        </a>
+                        <a href="tel:+8801737861695" class="footer-link">
+                            <i class="fa-brands fa-whatsapp text-emerald"></i> +8801737861695
+                        </a>
+                        <a href="tel:+8801521520330" class="footer-link">
+                            <i class="fa-solid fa-phone text-blue"></i> +8801521520330
+                        </a>
+                        <span class="footer-link text-muted">
+                            <i class="fa-solid fa-location-dot"></i> Kazipara, Mirpur 10, Dhaka
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 <strong>Md. Washim Akram</strong> (AlienWashim). All rights reserved.
+                </div>
+                <div>
+                    Designed &amp; Developed with Modern Web Standards.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

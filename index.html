@@ -1,232 +1,823 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Md Washim Akram | .NET Developer | ASP.NET MVC/Core | SQL | Angular
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Md Washim Akram (AlienWashim), Jr. Software Developer at AkijBashir Group. .NET Developer, ASP.NET MVC/Core, SQL Server, Angular, and Passionate Educator."
+    />
+    <meta
+      name="keywords"
+      content="Washim Akram, AlienWashim, Jr. Software Developer, AkijBashir Group, .NET Developer, ASP.NET Core, Angular, SQL Server, SSRS, Full Stack Developer"
+    />
+    <meta name="author" content="Md. Washim Akram" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washim Akram</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/BAnimation.css" type="text/css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/test.css">
-    <link rel="icon" type="image/x-icon" href="img/icon.jpg">
-    <script src="js/style.js"></script>
-    <script src="include-nav.js"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="icon" type="image/x-icon" href="img/icon.jpg" />
 
-</head>
+    <!-- Script -->
+    <script src="js/style.js" defer></script>
+  </head>
 
-<body>
+  <body>
+    <!-- Top Progress Bar for Seamless Page Transitions -->
+    <div id="page-progress-bar"></div>
 
-
-    <div class="main_container">
-
-        <div class="header">
-            <div class="img1">
-                <a href="index.html"><img src="img/Washim Akram Banner.png" alt="Md Washim Akram" id="w34"></a>
+    <!-- Header / Navigation -->
+    <header class="header">
+      <div class="container nav-container">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img
+            src="img/Washim-removebg-preview.png"
+            alt="Md Washim Akram"
+            class="nav-brand-avatar"
+          />
             </div>
-            <div class="menu-icon" id="menu-icon">
-                <i class="fas fa-eye"></i> <!-- Font Awesome menu icon -->
+          </div>
+          <div class="nav-brand-text">
+            <span class="nav-brand-name">Washim Akram</span>
+            <span class="nav-brand-role">Software Developer</span>
+          </div>
+        </a>
+
+        <nav class="nav-menu" id="nav-menu">
+          <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="education.html" class="nav-link">Education</a>
+            <a href="project.html" class="nav-link">Projects</a>
+            <a href="research.html" class="nav-link">Research</a>
+            <a href="award.html" class="nav-link">Awards</a>
+            <a href="course.html" class="nav-link">Courses</a>
+            <a href="activity.html" class="nav-link">Activities</a>
+          </div>
+
+          <div class="nav-actions">
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              title="Toggle Theme"
+              aria-label="Toggle Theme"
+            >
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
+          </div>
+        </nav>
+
+        <button
+          class="mobile-toggle"
+          id="mobile-toggle"
+          aria-label="Toggle Menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="badge-role">
+              <span class="pulse-dot"></span>
+              Jr. Software Developer @ AkijBashir Group (Since May 2025)
             </div>
 
-            <div class="navbar" id="navbar">
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Md Washim Akram</span>
+            </h1>
 
-                <div class="nevi1">
-                    <div class="item1"><a href="index.html#about-me"><i class="fa-solid fa-face-grin-hearts"> About
-                                Me</i></a></div>
-                    <div class="item1"><a href="files/Md Washim Akram_CV.pdf" download="Md Washim Akram_CV.pdf"><i
-                                class=" fa-solid fa-graduation-cap"> Download CV</i></a></div>
-                    <div class="item1"><a href="#footer"><i class="fa-solid fa-address-book"> Contact</i></a></div>
-                </div>
-
-                <div class="nevi2">
-                    <div class="item2"><a href="education.html">Education</a></div>
-                    <div class="item2"><a href="experience.html">Experiences</a></div>
-                    <div class="item2"><a href="research.html">Research Experience</a></div>
-                    <div class="item2"><a href="project.html">Projects</a></div>
-                    <div class="item2"><a href="course.html">Courses</a></div>
-                    <div class="item2"><a href="award.html">Award and Certification</a></div>
-                    <div class="item2"><a href="activity.html">Extra-curricular Activities</a></div>
-                </div>
+            <div class="typewriter-wrapper">
+              <span>I am a</span>
+              <span class="typed-text" id="typed-text"></span>
+              <span class="cursor">|</span>
             </div>
+
+            <p class="hero-description">
+              Professional
+              <strong>.NET &amp; Full Stack Developer</strong> building and
+              maintaining enterprise-level production software across multiple
+              business units at <strong>AkijBashir Group</strong>. Specializing
+              in <strong>ASP.NET Core Web API</strong>,
+              <strong>Angular</strong>, <strong>MS SQL Server</strong>,
+              <strong>.NET MVC</strong>, <strong>Windows Forms</strong>, and
+              <strong>MS Report Server (SSRS)</strong>. Passionate educator
+              sharing programming insights on YouTube.
+            </p>
+
+            <div class="hero-actions">
+              <a href="experience.html" class="btn btn-primary">
+                <i class="fa-solid fa-briefcase"></i> Work Experience
+              </a>
+              <a href="project.html" class="btn btn-secondary">
+                <i class="fa-solid fa-diagram-project"></i> View Projects
+              </a>
+              <a
+                href="https://www.youtube.com/@AlienWashim"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+                style="border-color: rgba(255, 0, 0, 0.45)"
+              >
+                <i class="fa-brands fa-youtube" style="color: #ff0000"></i>
+                YouTube Channel
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <a
+                href="https://github.com/AlienWashim"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                title="GitHub"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alienwashim/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                title="LinkedIn"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@AlienWashim"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link social-yt"
+                title="YouTube"
+                aria-label="YouTube"
+              >
+                <i class="fa-brands fa-youtube" style="color: #ff0000"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/AlienWashim"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                title="Facebook"
+                aria-label="Facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="mailto:ws.akram330@gmail.com"
+                class="social-link"
+                title="Email"
+                aria-label="Email"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="avatar-wrapper">
+              <div class="avatar-backdrop"></div>
+              <div class="avatar-img-container">
+                <img
+                  src="img/Washim-removebg-preview.png"
+                  alt="Md Washim Akram - .NET &amp; Angular Developer"
+                />
+              </div>
+
+              <!-- Floating Tech Badges -->
+              <div class="floating-chip chip-1">
+                <i class="fa-solid fa-code text-cyan"></i>
+                <span>ASP.NET Core &amp; Angular</span>
+              </div>
+              <div class="floating-chip chip-2">
+                <i class="fa-solid fa-database text-blue"></i>
+                <span>MS SQL Server &amp; SSRS</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-
-
-
-
-        <div class="content">
-
-            <section> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
-            </section>
-
-            <div class="main-container">
-
-                <!-- Top Section -->
-                <div class="top-section">
-                    <div class="image-container">
-                        <img src="img/1.png" alt="Washim Akram" />
-                    </div>
-
-                    <div class="intro-text">
-                        <h1 class="typing">
-                            I'm <span class="typed-name" id="typed-text"></span>
-                            <span class="cursor">|</span>
-                        </h1>
-                        <p>
-                            Recent Computer Science graduate from Green University of Bangladesh with a strong foundation in .NET technologies.
-                             Skilled in ASP.NET MVC, ASP.NET Core, Entity Framework, and Microsoft SQL Server, with additional
-                             experience in Bootstrap and modern web development. Driven by a passion for building efficient, scalable solutions and a commitment to continuous learning.
-                        </p>
-                    </div>
-
-
-                </div>
-
+      <!-- Stats Counter Row -->
+      <section class="section" style="padding-top: 1rem; padding-bottom: 2rem">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">1.5+ Yrs</span>
+              <span class="stat-label">Enterprise Software Engineering</span>
             </div>
+            <div class="stat-card">
+              <span class="stat-number">3.91</span>
+              <span class="stat-label"
+                >B.Sc. in CSE CGPA (Green University)</span
+              >
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">8+</span>
+              <span class="stat-label"
+                >Vice Chancellor &amp; Dean's Awards</span
+              >
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Published IEEE Research Papers</span>
+            </div>
+          </div>
         </div>
+      </section>
 
+      <!-- 1. Work Experience & Enterprise Highlights (Kept First as Requested) -->
+      <section class="section" id="experience" style="padding-top: 1rem">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"
+              ><i class="fa-solid fa-briefcase"></i> Work Experience</span
+            >
+            <h2 class="section-title">AkijBashir Group Production Systems</h2>
+            <p class="section-subtitle">
+              Delivering mission-critical enterprise platforms, production
+              automation, and modern web architectures.
+            </p>
+          </div>
 
-        <div class="second-content">
-
-            <div class="left_panel">
-
-
-                <div class="lp-item1">
-                    <div class="exp-title"><button><span>Objective</span></button></div>
-
-                    <div class="obj-txt">
-                        A highly motivated and curious individual with a passion for continuous learning and growth. I
-                        thrive in team-oriented, collaborative environments and excel at contributing innovative ideas
-                        in dynamic and challenging workplaces. Eager to work in a setting that encourages creativity,
-                        fosters professional development, and offers opportunities to make a meaningful impact.
-                    </div>
-
+          <div
+            class="card"
+            style="
+              margin-bottom: 2rem;
+              border-left: 4px solid var(--accent-emerald);
+            "
+          >
+            <div class="timeline-header" style="margin-bottom: 1.25rem">
+              <div class="timeline-header-main">
+                <h3 class="role-title" style="font-size: 1.45rem">
+                  Jr. Software Developer
+                </h3>
+                <div
+                  class="company-name"
+                  style="font-size: 1.1rem; margin-top: 0.25rem"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/alienwashim/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-solid fa-building"></i> AkijBashir Group
+                  </a>
+                  <span style="color: var(--text-muted); font-weight: 500;">· Full-time</span>
                 </div>
-
-
-
-                <div class="lp-item1">
-                    <div class="exp-title"><button><span>Career Goal</span></button></div>
-
-                    <div class="obj-txt">
-                        My goal is to pursue a career as a software engineer, where I can apply my technical skills and
-                        knowledge to develop innovative solutions that drive the industry forward. I am committed to
-                        contributing to the advancement of software development through continuous learning,
-                        collaboration, and the implementation of cutting-edge technologies. My long-term aspiration is
-                        to support and enhance this field by working on impactful projects that improve efficiency, user
-                        experience, and overall system performance.
-                    </div>
+              </div>
+              <div class="timeline-header-meta">
+                <span class="badge badge-emerald" style="font-size: 0.85rem"
+                  ><i class="fa-solid fa-circle-dot"></i> May 2025 – Present · 1
+                  yr 7 mos</span
+                >
+                <div class="timeline-period">
+                  <i class="fa-solid fa-location-dot"></i> Banani, Dhaka-1213 · On-site
                 </div>
-
-
+              </div>
             </div>
 
-            <div class="right_panel">
-                <div class="rt-item1">
+            <p
+              style="
+                font-size: 1.025rem;
+                font-weight: 600;
+                color: var(--text-primary);
+                margin-bottom: 1.5rem;
+                line-height: 1.7;
+              "
+            >
+              Designed and optimized databases, developed RESTful APIs, and
+              integrated Angular frontends to deliver scalable enterprise
+              solutions using ASP.NET Core Web API, Angular, MS SQL Server, and
+              .NET technologies.
+            </p>
 
-                    <div class="exp-title"><button><span>My skills</span></button></div>
-                    <div class="skill-item">
-                        <div class="my-skill">
-                            <b>Technical Skills</b>
-                            <ul>
-                                <li><b>Programming Languages:</b> C, C++, Java, Python, C#, Assembly</li>
-                                <li><b>Programming Expertise:</b> Data Structures, Algorithms, Object-Oriented
-                                    Programming (OOP), Design Patterns, Design Principles, LINQ</li>
-                                <li><b>Web Technologies:</b> HTML, CSS, JavaScript, jQuery, AJAX, Bootstrap, Razor
-                                    Components, Web API Communication</li>
-                                <li><b>Databases:</b> MySQL, Microsoft SQL Server, Entity Framework, ADO.NET, Query
-                                    Optimization, Stored Procedures, SQL Functions, Normalization, Joins</li>
-                                <li><b>Frameworks & Tools:</b> ASP.NET Core, ASP.NET MVC, Blazor (WebAssembly & Server),
-                                    MudBlazor, WinForms, Git, GitHub, IIS</li>
-                                <li><b>Other Technologies:</b> PLM, API Development & Integration, XML Processing, JSON
-                                    Handling</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="my-skill">
-                            <b>Soft Skills</b>
-                            <ul>
-                                <li>Time Management</li>
-                                <li>Adaptability</li>
-                                <li>Leadership</li>
-                                <li>Teamwork</li>
-                                <li>Event Management</li>
-                            </ul>
-                        </div>
-                    </div>
-
+            <div class="card-grid">
+              <!-- Flow360 Platform -->
+              <div class="sub-card">
+                <div class="sub-card-header">
+                  <div class="sub-card-title">
+                    <i class="fa-solid fa-chart-line text-purple"></i>
+                    Sales Software “Flow360”
+                  </div>
+                  <span class="badge badge-purple">Sales Software Team</span>
                 </div>
+                <ul class="sub-card-list">
+                  <li>Developed complete <strong>Sales Modules</strong> for <strong>Akij Door</strong> and <strong>Akij Board</strong> as part of the enterprise sales platform Flow360.</li>
+                  <li>Contributing to Flow360's continuous development &amp; optimization supporting business units including <strong>Akij Glass Industries</strong>, <strong>Akij Ceramics</strong>, <strong>Akij Bathware</strong>, <strong>Akij Cables</strong>, and <strong>Akij Sanitaryware</strong>.</li>
+                </ul>
+              </div>
 
+              <!-- Akij Glass -->
+              <div class="sub-card">
+                <div class="sub-card-header">
+                  <div class="sub-card-title">
+                    <i class="fa-solid fa-wine-bottle text-cyan"></i> Akij Glass
+                    Industries Ltd.
+                  </div>
+                  <span class="badge badge-cyan">Production &amp; SSRS</span>
+                </div>
+                <ul class="sub-card-list">
+                  <li>Developed and deployed an end-to-end <strong>Production Module</strong> using ASP.NET Core Web API, Angular, MS SQL Server, and SSRS (MS Report Server), ensuring smooth manufacturing workflow integration.</li>
+                </ul>
+              </div>
+
+              <!-- Group Complaint Management -->
+              <div class="sub-card">
+                <div class="sub-card-header">
+                  <div class="sub-card-title">
+                    <i class="fa-solid fa-headset text-blue"></i> Complaint
+                    Management System
+                  </div>
+                  <span class="badge badge-emerald">Live in Production</span>
+                </div>
+                <ul class="sub-card-list">
+                  <li>Built a fully functional centralized Complaint Management System using ASP.NET Core Web API and Angular — currently live for Bathware and Sanitaryware units, scalable group-wide.</li>
+                </ul>
+              </div>
+
+              <!-- Bathware, Ceramics & Biax Films -->
+              <div class="sub-card">
+                <div class="sub-card-header">
+                  <div class="sub-card-title">
+                    <i class="fa-solid fa-industry text-emerald"></i> Bathware,
+                    Ceramics &amp; Biax Films
+                  </div>
+                  <span class="badge badge-blue"
+                    >Manufacturing &amp; Desktop</span
+                  >
+                </div>
+                <ul class="sub-card-list">
+                  <li>Developed Production Module for <strong>Akij Bathware Ltd.</strong> for automation.</li>
+                  <li>Enhanced core software for <strong>Akij Ceramics Ltd.</strong> using .NET MVC.</li>
+                  <li>Upgraded production modules for <strong>Akij Biax Films Ltd.</strong> using Windows Forms integrated with real-time machinery.</li>
+                </ul>
+              </div>
+
+              <!-- Billing & Financial Modules -->
+              <div class="sub-card">
+                <div class="sub-card-header">
+                  <div class="sub-card-title">
+                    <i class="fa-solid fa-truck-fast text-amber"></i> Billing
+                    &amp; Accounts Modules
+                  </div>
+                  <span class="badge badge-amber">Logistics &amp; Finance</span>
+                </div>
+                <ul class="sub-card-list">
+                  <li>Developed <strong>Transport Billing Automation Modules</strong> for <strong>Akij Biax Films Ltd.</strong> and <strong>Akij Steel Mills Ltd.</strong> featuring automated calculations and reporting.</li>
+                  <li>Developed Accounts modules for financial records and complex SQL report generation.</li>
+                </ul>
+              </div>
+
+              <!-- Mobile APIs & Cross-Functional -->
+              <div class="sub-card">
+                <div class="sub-card-header">
+                  <div class="sub-card-title">
+                    <i class="fa-solid fa-mobile-screen text-cyan"></i> Mobile
+                    APIs &amp; Enterprise Support
+                  </div>
+                  <span class="badge badge-cyan"
+                    >Integration &amp; Operations</span
+                  >
+                </div>
+                <ul class="sub-card-list">
+                  <li>Designed &amp; developed RESTful APIs supporting mobile business workflows.</li>
+                  <li>Continuously maintain and optimize enterprise software across production, sales, accounts, and operations.</li>
+                  <li>Collaborate with clients and cross-functional teams to resolve challenges.</li>
+                </ul>
+              </div>
             </div>
 
+            <div style="text-align: center; margin-top: 2rem">
+              <a href="experience.html" class="btn btn-secondary">
+                <i class="fa-solid fa-arrow-right"></i> View Complete Career
+                History &amp; BJIT Experience
+              </a>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- 2. Profile Overview & Passionate Educator -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"
+              ><i class="fa-solid fa-user-tie"></i> About Me</span
+            >
+            <h2 class="section-title">
+              Scalable Systems &amp; Continuous Learning
+            </h2>
+            <p class="section-subtitle">
+              Bridging robust enterprise backend services with dynamic web
+              frontends and knowledge sharing.
+            </p>
+          </div>
+
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-top">
+                <div class="card-icon">
+                  <i class="fa-solid fa-building-user"></i>
+                </div>
+                <span class="badge badge-emerald">AkijBashir Group</span>
+              </div>
+              <h3 class="card-title">Enterprise Software Development</h3>
+              <p class="card-text">
+                At <strong>AkijBashir Group</strong>, I engineer and maintain
+                enterprise-grade software across diverse manufacturing and
+                commercial units. My day-to-day includes creating ASP.NET Core
+                Web APIs, integrating Angular frontends, designing optimized SQL
+                databases, and engineering complex data-driven reports using MS
+                Report Server (SSRS).
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-top">
+                <div class="card-icon">
+                  <i class="fa-brands fa-youtube" style="color: #ff0000"></i>
+                </div>
+                <span class="badge badge-purple">Knowledge Sharing</span>
+              </div>
+              <h3 class="card-title">Passionate Educator</h3>
+              <p class="card-text">
+                Beyond full-time software engineering, I am deeply committed to
+                education. As a former Academic Assistant at Green University
+                mentoring 150+ students, I now create practical,
+                easy-to-understand programming and computer science tutorials on
+                my educational YouTube channel <strong>@AlienWashim</strong>.
+              </p>
+              <div style="margin-top: 1rem">
+                <a
+                  href="https://www.youtube.com/@AlienWashim"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline"
+                  style="border-color: rgba(255, 0, 0, 0.4)"
+                >
+                  <i class="fa-brands fa-youtube" style="color: #ff0000"></i>
+                  Watch on YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Technical Skills Matrix -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"
+              ><i class="fa-solid fa-layer-group"></i> Technical
+              Competencies</span
+            >
+            <h2 class="section-title">Skills &amp; Technology Stack</h2>
+            <p class="section-subtitle">
+              Comprehensive technical proficiency applied daily across
+              production systems and high-throughput enterprise architectures.
+            </p>
+          </div>
+
+          <div class="card" style="padding: 2.5rem">
+            <!-- Backend & .NET -->
+            <div class="skills-category">
+              <h3 class="skills-category-title">
+                <i class="fa-solid fa-server"></i> Backend &amp; Enterprise .NET
+              </h3>
+              <div class="skills-pill-group">
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-cube"></i> C#</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-brands fa-microsoft"></i> ASP.NET Core Web
+                  API</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-diagram-project"></i> ASP.NET MVC</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-brands fa-windows"></i> Windows Forms</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-bolt"></i> Blazor (WASM &amp;
+                  Server)</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-comments"></i> SignalR (Real-time
+                  ChatHub)</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-shield-halved"></i> JWT
+                  Authentication</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-link"></i> Entity Framework Core</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-code"></i> LINQ</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-database"></i> ADO.NET</span
+                >
+              </div>
+            </div>
+
+            <!-- Frontend & Modern Web -->
+            <div class="skills-category">
+              <h3 class="skills-category-title">
+                <i class="fa-brands fa-angular" style="color: #dd0031"></i>
+                Frontend &amp; Web Technologies
+              </h3>
+              <div class="skills-pill-group">
+                <span class="skill-pill"
+                  ><i class="fa-brands fa-angular text-purple"></i> Angular /
+                  AngularJS</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-brands fa-react text-cyan"></i> React</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-brands fa-js text-amber"></i> JavaScript
+                  (ES6+)</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-code"></i> TypeScript</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-shapes"></i> MudBlazor</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-brands fa-html5"></i> HTML5 &amp; CSS3</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-mobile-screen"></i> Responsive UI /
+                  UX</span
+                >
+              </div>
+            </div>
+
+            <!-- Database & Reporting -->
+            <div class="skills-category">
+              <h3 class="skills-category-title">
+                <i class="fa-solid fa-database"></i> Database Engineering &amp;
+                Reporting
+              </h3>
+              <div class="skills-pill-group">
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-table"></i> Microsoft SQL Server</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-chart-column"></i> MS Report Server
+                  (SSRS)</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-gears"></i> Stored Procedures &amp;
+                  Triggers</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-chart-line"></i> Complex SQL Query
+                  Optimization</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-filter"></i> Database Normalization
+                  &amp; Joins</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-database"></i> MySQL</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-file-code"></i> XML &amp; JSON
+                  Handling</span
+                >
+              </div>
+            </div>
+
+            <!-- Tools & Mobile Collaboration -->
+            <div class="skills-category" style="margin-bottom: 0">
+              <h3 class="skills-category-title">
+                <i class="fa-solid fa-screwdriver-wrench"></i> Architecture,
+                Tools &amp; Practices
+              </h3>
+              <div class="skills-pill-group">
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-mobile"></i> Mobile API
+                  Integration</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-file-invoice"></i> Swagger /
+                  OpenAPI</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-brands fa-python"></i> Python</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-brands fa-java"></i> Java</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-code"></i> C / C++</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-sitemap"></i> Data Structures &amp;
+                  Algorithms</span
+                >
+                <span class="skill-pill"
+                  ><i class="fa-solid fa-object-group"></i> OOP &amp; System
+                  Design</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Global Image Modal Viewer -->
+    <div id="imageModal" class="modal-viewer" role="dialog" aria-modal="true">
+      <div class="modal-content-wrapper">
+        <button
+          class="modal-close-btn"
+          id="modalClose"
+          aria-label="Close image viewer"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img id="modalImage" class="modal-img" src="" alt="Preview image" />
+      </div>
     </div>
 
-
-    <footer>
-        <div class="footer" id="footer">
-
-            <div class="ft-item11 footer-hov">
-
-                <div class="footer-title">
-                    <i class="fas fa-address-book"> Contact Information</i>
-                </div>
-
-                <div class="social-item footer-content2">
-                    <a href="mailto:ws.akram330@gmail.com">ws.akram330@gmail.com</a>
-                    <a href="tel:+01737861695">+8801737861695 (Whatsapp)</a>
-                    <a href="tel:+01521520330">+8801521520330 (Secondary)</a>
-                </div>
-
+    <!-- Reusable Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="nav-brand">
+          <div class="nav-brand-avatar-wrap">
+            <div class="nav-brand-avatar-inner">
+              <img
+                src="img/Washim-removebg-preview.png"
+                alt="Md Washim Akram"
+                class="nav-brand-avatar"
+              />
             </div>
-
-            <div class="ft-item11 footer-hov">
-
-                <div class="footer-title">
-                    <i class="fas fa-globe"> Website</i>
-                </div>
-
-                <div class="social-item footer-content2">
-                    <a href="https://github.com/AlienWashim" target="_blank"><i class="fab fa-github"></i> AlienWashim</a>
-                    <a href="https://www.youtube.com/@AlienWashim" target="_blank"><i class="fab fa-youtube"></i> Washim Akram</a>
-                </div>
-
+          </div>
+          <div class="nav-brand-text">
+                <span class="nav-brand-name">Washim Akram</span>
+                <span class="nav-brand-role">Software Developer</span>
+              </div>
+            </a>
+            <p class="footer-brand-desc">
+              Jr. Software Developer at <strong>AkijBashir Group</strong>.
+              Experienced .NET &amp; Full Stack Developer specializing in
+              ASP.NET Core Web API, Angular, SQL Server, and enterprise scalable
+              solutions.
+            </p>
+            <div class="hero-socials">
+              <a
+                href="https://github.com/AlienWashim"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                title="GitHub"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alienwashim/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                title="LinkedIn"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@AlienWashim"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link social-yt"
+                title="YouTube"
+                aria-label="YouTube"
+              >
+                <i class="fa-brands fa-youtube" style="color: #ff0000"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/AlienWashim"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                title="Facebook"
+                aria-label="Facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="mailto:ws.akram330@gmail.com"
+                class="social-link"
+                title="Email"
+                aria-label="Email"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
             </div>
+          </div>
 
-
-            <div class="ft-item11 footer-hov">
-
-                <div class="footer-title">
-                    <i class="fas fa-address-book"> Social Media</i>
-                </div>
-
-                <div class="social-item footer-content2">
-                    <a href="https://www.facebook.com/AlienWashim" target="_blank"><i class="fab fa-facebook"></i>AlienWashim</a>
-                    <a href="https://www.twitter.com/AlienWashim" target="_blank"><i class="fab fa-twitter"></i>AlienWashim</a>
-                    <a href="https://www.instagram.com/AlienWashim" target="_blank"><i class="fab fa-instagram"></i>AlienWashim</a>
-                </div>
-
+          <div>
+            <h4 class="footer-heading">Navigation</h4>
+            <div class="footer-links">
+              <a href="index.html" class="footer-link"
+                ><i class="fa-solid fa-angle-right"></i> Home</a
+              >
+              <a href="experience.html" class="footer-link"
+                ><i class="fa-solid fa-angle-right"></i> Experience</a
+              >
+              <a href="education.html" class="footer-link"
+                ><i class="fa-solid fa-angle-right"></i> Education</a
+              >
+              <a href="project.html" class="footer-link"
+                ><i class="fa-solid fa-angle-right"></i> Projects</a
+              >
+              <a href="research.html" class="footer-link"
+                ><i class="fa-solid fa-angle-right"></i> Research</a
+              >
             </div>
+          </div>
 
+          <div>
+            <h4 class="footer-heading">Portfolio</h4>
+            <div class="footer-links">
+              <a href="award.html" class="footer-link"
+                ><i class="fa-solid fa-angle-right"></i> Awards &amp; Honors</a
+              >
+              <a href="course.html" class="footer-link"
+                ><i class="fa-solid fa-angle-right"></i> Certifications</a
+              >
+              <a href="activity.html" class="footer-link"
+                ><i class="fa-solid fa-angle-right"></i> Extra-curricular</a
+              >
+              <a href="files/Md Washim Akram_CV.pdf" target="_blank" rel="noopener noreferrer" class="footer-link"><i class="fa-solid fa-file-arrow-down"></i> View Resume</a
+              >
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">Get in Touch</h4>
+            <div class="footer-links">
+              <a href="mailto:ws.akram330@gmail.com" class="footer-link">
+                <i class="fa-solid fa-envelope text-cyan"></i>
+                ws.akram330@gmail.com
+              </a>
+              <a href="tel:+8801737861695" class="footer-link">
+                <i class="fa-brands fa-whatsapp text-emerald"></i>
+                +8801737861695
+              </a>
+              <a href="tel:+8801521520330" class="footer-link">
+                <i class="fa-solid fa-phone text-blue"></i> +8801521520330
+              </a>
+              <span class="footer-link text-muted">
+                <i class="fa-solid fa-location-dot"></i> Banani &amp; Mirpur,
+                Dhaka
+              </span>
+            </div>
+          </div>
         </div>
-    </footer>
-</body>
 
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 <strong>Md. Washim Akram</strong> (AlienWashim). All
+            rights reserved.
+          </div>
+          <div>
+            Built with Modern Web Standards, .NET &amp; Clean Architecture.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
